@@ -1,0 +1,564 @@
+/* ==== GENERAL ====*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100%;
+}
+
+@media all and (max-width: 600px){
+
+	html{
+		font-size: 80%;
+	}
+}
+
+body{
+	padding-top: 35px;
+	background: url('../img/fondo.jpg') top left repeat;
+	/*background-size: cover; esto permite que la imagen se rederise conforme a la pantalla
+	*/
+	font-size: 16px;
+	color: white;
+
+}
+
+.box_title {
+    background: #454a4a;/*232b2b*/
+    border-bottom: 0px;
+    border-top: 4px solid #ffffff;/*4F8F16*/
+    padding: 5px;
+    /* text-shadow: 0 0 3px #004403; */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    font-family: Century Gothic,Arial,sans-serif;
+    line-height: 1.0em;
+    overflow: hidden;
+}
+
+.post-content{
+	border: 1px solid #000;
+}
+
+.post-content p{
+	font-size: 1rem;
+	text-align: left;
+}
+
+.item-collection{
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.creator{
+	text-align: left;
+}
+
+.wrap{ 
+	padding-top: 30px;
+	padding-bottom: 5px;
+
+}
+
+
+/*course-target  what-learnin*/
+
+.main-information{
+	display: table;
+	border-spacing: 10px;
+}
+
+.row-information{
+	display: table-row;
+	padding: 0;
+	margin-top: 0px;
+	border-top: 0px;
+}
+
+@media (max-width: 900px){
+
+	.wrap{
+		padding-top: 5px;
+		padding-bottom: 1px;
+	}
+
+	.jumbotron{
+		padding-bottom: 1px;
+		font-size: 1rem;
+
+	}
+	
+}
+
+nav{
+	background-color: black;
+}
+
+.header-section{
+ 	text-align: center;
+ 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+
+}
+
+h1{
+	font-family: 'graduate', cursive;
+}
+
+h2{
+	font-family: 'pacifico', cursive,Calibri;
+}
+
+h3{
+	font-family: 'pacifico', cursive,Calibri;
+	
+}
+
+/* === NAVIGATION === */
+.btn-navbar:hover{
+	color: #26C281;
+	font-family: 'pacifico', cursive,Calibri;
+}
+
+/* === END NAVIGATION === */
+
+
+/* === TITLE & ENROLL*/
+
+#title-enroll .jumbotron{
+	/*background: url('../img/mainBackground.png') 100% 0 no-repeat fixed;*/
+	background: url('../img/fondo5.png') 50% 10% no-repeat fixed;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	text-align: center;
+	color: white;
+	margin-bottom: 2px;
+	/*background-color: red;*/
+}
+
+.navbar {
+	background: url('../img/fondo5.png') 50% 10% no-repeat fixed;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+}
+
+
+
+/*WHAT WILL YOU LEARM*/
+#what-learn{
+	display: table-cell;
+	width: 25%;
+	text-align: center;
+	margin-top: 0px;
+	padding-top:0px; 
+	border-top:0px;
+
+}
+
+
+
+@media (max-width: 600px){
+
+	
+	#what-learn{
+		margin:0;
+		padding: 0;
+		border-top:0px;
+		/*background-color:blue;*/
+	}
+	
+
+
+}
+
+@media (min-width: 900px){
+
+	#what-learn{
+		display: table-cell;
+		margin-top: 0px;
+		padding-top:0px; 
+		border-top:0px;
+		text-align: top;
+		font-size: 1rem;
+	
+	}
+
+	#what-learn p{
+		width: 50%;
+	}
+
+	
+}
+
+/*==Course TARGET===*/
+#course-target{
+	display: table-cell;
+	width: 50%;
+	padding-left:2.5%; 
+	/*background-color: #BF3E11;*/
+	/*color: white;*/
+}
+
+.scale{
+	text-align: justify;
+	font-size: 1em;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+/* === COURSE FEATURE ==*/
+#course-features{
+	/*background-color: white;*/
+	text-align: center;
+}
+
+#course-features i{
+	margin-top: 20px; /* aqui separamos los iconos del titulo*/
+}
+
+/* === 	CREATOR === */
+#creator .left-side{
+	text-align: center;
+}
+.badge.social{
+	background:#95A5A6;
+	font-size: 20px;
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+	padding: 0;
+	-webkit-border-radius:35px;
+	-moz-border-radius:35px;
+	border-radius: 35px;
+	color: white;
+}
+
+.badge.social.twitter:hover{
+	background: #55ACEE;
+}
+
+.badge.social.linkedin:hover{
+	background: #4875B4;
+}
+
+.badge.social.blog:hover{
+	background: #26C281;
+}
+
+/* ===COLLECTION SLIDER ===*/
+/*#collection-slider  {
+   /* padding-top: 15px;
+    /*padding-left: 100px; 
+    margin-bottom: 5px;	*/
+	/*height: 165px;
+	/*width: auto;*/
+	/*background: #563d7c;*/
+	/*display: table;
+  	border-spacing: 5px;
+}*/
+
+/*.collection-container{
+	display: table-row;
+	padding-top:0px;
+}
+
+.collection-description{
+	display: table-cell;
+	
+	
+}*/
+@media(min-width: 960px) and (max-width: 3000px){
+	#collection-slider  {
+		display: table;
+	    padding-top: 0px;
+	    padding-left: 0px;
+	    margin-bottom: 0px;	
+		width: auto;
+		/*background: #20E6D6;*/
+	  	border-spacing: 10px;
+	  	
+	}
+	.collection-container{
+		display: table-row;
+		/*background-color:#ffffff;*/
+		width: 95%;
+		padding:0;
+		
+		
+	}
+
+	#slide-row {
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		padding-top: 5px;
+		width: 35%;
+	
+		display: inline-block; /*nos muestra como se va a comportar tipo block*/
+		vertical-align: top;		
+	}
+
+	/*.carousel-inner{
+		width: 80%;
+		height:20%;
+	}*/
+
+	#collection-description{
+		display: inline-block; /*nos muestra como se va a comportar tipo block*/
+		vertical-align: top;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-left: 0px; 
+		padding-bottom: 0px;
+		width: 60%;
+		/*color: red;*/
+		/*background-color: #ffe86c;*/
+		
+		
+
+	}
+
+	.main-description{
+		width: 95%;
+		text-align: center;
+		
+	}
+
+	
+
+	
+	
+
+}
+
+
+@media(min-width: 700px) and (max-width: 960px){
+	#collection-slider  {
+		display: table;
+	    padding-top: 0px;
+	    padding-left: 0px;
+	    margin-bottom: 0px;	
+		width: auto;
+		/*background: #563d7c;*/
+	  	border-spacing: 15px;
+	  	
+	}
+
+	.collection-container{
+		display: table-row;
+		/*background-color:#78DC10;*/
+		max-width: 700px;
+		padding:0;
+		
+		
+	}
+
+	#slide-row {
+		display: table-cell;
+		max-width: 700px;
+		min-height:200px;
+
+		
+	}
+
+	/*#carousel-example-captions{
+		ax-width: 500px;
+		min-height:200px;
+	}*/
+
+	.main-title{
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-left: 10px;
+		/*border: 3px solid red;*/
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.main-title h1{
+		 font-size: 2.5rem;
+	}
+
+	#btn-title {
+		text-align: center;
+		
+	}
+	.jumbotron {
+      padding-top: 0px; 
+      padding-bottom: 0px;
+     
+	}
+
+	#collection-description{
+		display: table-cell;
+		padding-top: 0px;
+		padding-left: 0px; 
+		padding-bottom: 0px;
+		width: 40%;
+		/*background-color: #DE7821;*/
+		/*border: 2px solid #000;*/
+		
+
+	}
+
+	.main-description p{
+		text-align: justify;
+		 font-size: 0.9rem;
+	}
+
+	.main-description{
+		text-align: center;
+		display: inline-block; /*nos muestra como se va a comportar tipo block*/
+	}
+
+}
+
+@media (max-width: 700px){
+
+	#collection-slider{
+		display: table;
+		padding-bottom:1px;		
+		margin-bottom: 1px;
+		border-bottom:1px;
+		width: auto;
+		/*background-color: black;*/
+		
+	}
+
+	.collection-container{
+		
+		/*background-color:orange;*/
+		position: left;
+		padding-left: 0px;
+
+	}
+
+
+	#slide-row {
+		/*display: table-cell;	*/
+		padding-top:0px;	
+		width:100%;
+	}
+	#collection-description{
+		/*display: table-cell;		*/
+		/*background-color: green;*/
+		width: 100%;
+		font-size: 6px;
+		text-align: center;
+	}
+
+	.jumbotron {
+      padding-top: 0px; 
+      padding-bottom: 0px;
+     
+	}
+
+	.main-title{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: 0px;
+		padding-left: 10px;
+		/*border: 3px solid red;*/
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.main-title h1 p{
+		 font-size: 2.0rem;
+	}
+
+	.main-title  p{
+		 font-size: 1.3rem;
+	}
+
+	#btn-title {
+		text-align: center;
+		
+	}
+
+	.scale{
+		font-size: 0.5em;
+	}
+	#course-target{
+		display: table-cell;
+			padding-left:0px; 
+	/*background-color: #BF3E11;*/
+	/*color: white;*/
+	}
+
+}
+
+
+
+/* ===PROMOTIONAL VIDEO ===*/
+
+/*DRY Don't Repeat yourself*/
+#promo-video {
+	background: #563d7c;
+	color: white;
+
+	
+}
+
+/* ===TUTORIAL  VIDEO ===*/
+#tutorial-video{
+	margin-top:0px;
+	padding: 0;
+	display: flex;
+}
+
+#tutorial-video .p {
+	font-size: 1.5rem;
+}
+
+/* ==== USER ===*/
+#user{
+	padding: 45px;
+	color: white;
+	background: #26C281;
+}
+
+#navbar-bread{
+	margin-top:0px;
+	padding: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+/* === FOOTER === */
+#footer{
+	padding: 20px;
+	background: #22313f;
+	text-align: center;
+	color:white;
+}
+
+#footer a{
+	color:#f5ab35;
+}
+
+#footer a:hover{
+	color:#f9690e;
+}
+
+/* *** Lecture.php *** */
+
+/* === DISCUSSIONS === */
+#discussions {
+	background:white;
+}
+
+#discussions #btn-comentario, #discussions #btn-font-answer{
+	text-align: right;
+	margin-top:5px;
+}
+
+

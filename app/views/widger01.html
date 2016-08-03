@@ -1,0 +1,4658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Widget: </title>
+        
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<meta name="description" content="" >
+<meta name="keywords" content="" >
+
+
+<!-- FOLLOW or NOFOLLOW SETTING -->
+          
+<meta name="robots" content="index, follow" >
+<!-- FACEBOOK META DATA -->
+<meta property="og:type" content="website" >
+<meta property="og:url" content="http://www.tirehost.com/devpreview" >
+<meta property="og:site_name" content="TireHost" >
+<meta property="og:title" content="Widget: " >
+<meta property="og:description" content="" >
+<meta property="og:image" content="http://www.tirehost.com/images/JWtirehostlogoedit.png">
+        <link rel="canonical" href="https://www.tirehost.com/devpreview">
+        <link rel="stylesheet" href = "/include/css/styles.css" type = "text/css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+        
+        <!---Google Font Api-->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600' rel='stylesheet' type="text/css">
+        
+                    <link rel="shortcut icon" href="/images/favicon.png">
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-57959662-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><script>
+	  	window.sdkAsyncInit = function() {
+	    	// Instantiate the SDK
+			var res = new EDMUNDSAPI('u2z7d6cawyn6ft9qfcjc9449');
+			// Optional parameters
+			var options = {};
+			// Callback function to be called when the API response is returned
+			function success(res) {
+			
+				if (res.error) {
+					body.innerHTML = "ERROR: " + res.error.message;
+				}
+				
+			
+				var selectList = "";
+				
+				
+				for (i = 0; i < res.makes.length; i++) {
+    				selectList += "<option value='" +  res.makes[i].name + "'>" + res.makes[i].name + "</option>";
+				}
+				
+                $('#selectTes').append(selectList);
+                $('#selectTes').focus();
+                
+                
+                var makeEdit = $("#myform-element-9").text();
+
+                
+                if(makeEdit != ""){
+
+                    $("select option[value='"+makeEdit+"']").attr("selected","selected");
+                    $("#selectTes").change();
+                
+                }
+
+			}
+
+			// Oops, Houston we have a problem!
+			function fail(data) {
+				console.log(data);
+			}
+			// Fire the API call
+			
+			res.api('/api/vehicle/v2/makes', options, success, fail);
+           	
+	  };
+	  // Load the SDK asynchronously
+	  (function(d, s, id){
+	     	var js, sdkjs = d.getElementsByTagName(s)[0];
+	     	if (d.getElementById(id)) {return;}
+	     	js = d.createElement(s); js.id = id;
+	     	js.src = "/include/edmunds.api.sdk.js";
+	     	sdkjs.parentNode.insertBefore(js, sdkjs);
+	   }(document, 'script', 'edmunds-jssdk'));
+
+	</script>
+    
+    <meta name="Language" content="English">
+<meta name="Publisher" content="Tire Host">
+<meta name="Revisit-After" content="7 Days">
+<meta name="distribution" content="LOCAL">
+<meta name="Robots" content="INDEX, FOLLOW">
+<meta name="page-topic" content="Tire Host">
+<meta name="YahooSeeker" content="INDEX, FOLLOW">
+<meta name="msnbot" content="INDEX, FOLLOW">
+<meta name="googlebot" content="index, follow">
+<meta name="Rating" content="General"> 
+<meta name="allow-search" content="yes">
+<meta name="expires" content="never">
+<meta name="googlebot" content="noodp">
+<meta name="slurp" content="noydir">    </head><body>
+<style type="text/css">
+			#mainmenu li a {
+	padding: 0 25px;
+   	font-size:15px;
+}
+.header-shell {
+  background: white;
+}
+#location_gmh {
+  background: url(/images/pindrop.png) no-repeat scroll 7px center #FFF;
+}	
+	
+	</style><!--  Theme Color Rules -->
+<style>
+.post_content.homepage_stream a h3 { 
+    border-color: rgba(0, 0, 0,1)!important;
+}
+.slick-prev:before, 
+.slick-next:before {
+    color: rgba(0, 0, 0,1)!important;
+    font-size: 25px !important;
+}
+#login_page div .main-tabs li.active a {
+    background: rgba(0, 0, 0,1);
+    border-color: rgba(0, 0, 0,1);   
+}
+#login_page div .main-tabs li.active a:hover {
+    background: rgba(0, 0, 0,1)!important;
+    border-color: rgba(rgb(0, 0, 0)1) !important;
+    color: white !important;
+}
+.logo-table a,
+.logo-table a:hover { 
+    color: rgba(0, 0, 0,1);
+}
+#mainmenu,.pricing_menu li .title, 
+a.corner-join,
+div#sidebar .account_menu h2, 
+table.large-step tr td:first-child span {
+    background: rgba(0, 0, 0,1);
+}
+.header-wrap #search_bar input[type="image"] {
+    background: rgba(0, 0, 0,1);
+}
+.hero-frame .search_box {
+    background: rgba(0, 0, 0,0.8);
+}
+.main-tabs li a {
+    background: rgba(0, 0, 0,.1);
+}
+.module {
+    border-color: rgba(0, 0, 0,1);
+}
+.hero-frame .search_box {
+    float: center !important;
+}
+#login_page .login h1 {
+    background: rgba(0, 0, 0,1)!important;
+}
+#mainmenu ul li ul li a:hover,
+#mainmenu ul li ul li a:last-child:hover {
+    border-left-color: rgba(0, 0, 0,1)!important;
+}    
+.hero-frame h1, .hero-frame h2 {
+    float: center!important;
+    text-align: center;  
+}
+.hero-frame h1, .top-head-left h1, .hero-frame h2 {
+    color: rgb(255, 255, 255);
+            font-family: 'Raleway';
+     
+}
+
+    .hero-frame .search_box {
+        float: none!important;
+        margin: 0 auto;
+                    width:510px;
+            
+    }
+    .hero-frame h1,
+    .hero-frame h2 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: none;
+        text-align: center;
+    }
+    .postcode_search [type="text"] {
+        text-align: center !important;
+    }    
+
+@media only screen and (max-width: 720px) {
+    a.corner-join {
+        background: rgba(0, 0, 0,1);
+    }
+}
+</style>
+
+<!-- Responsive Menu Rules -->
+
+<style>
+.sidebar_toggle {
+    background: rgba(0, 0, 0,1)!important; 
+}
+.responsive_mainmenu {
+    display: none;
+}
+.mainmenu_toggle {
+    display: none;
+}
+.responsive_mainmenu, .mainmenu_toggle  {
+    background: rgba(0, 0, 0,1)!important;
+}
+</style><div class="header-shell">
+    <div id="wrap" class="header-wrap">
+        <style type='text/css'> .logo-table {
+  border: 0 none;
+  float: left;
+  margin: 20px 0px 0 -191;
+  position: relative;
+  width: 100px;
+} </style><table class="logo-table">
+    <tr>
+
+                    <td>
+                <a href="http://www.tirehost.com/" title="TireHost">
+                    <img  src="/images/JWtirehostlogoedit.png" alt="TireHost">
+                </a>
+            </td>
+
+            </tr>
+</table><style type='text/css'> @media only screen and (max-width: 480px){
+  .header-wrap #search_bar td {
+    text-align: center;
+  }
+  .header-wrap #search_bar input[type="text"] {
+      width: calc(95% - 40px);
+  }
+} </style><style type='text/css'> a.btn-add-ad {    
+	display: inline-block;
+    margin-top: 10px;
+    width: 161px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #D42525;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: none;
+    border-color: #dbbd42;
+    border-radius: 5px;
+ 
+}
+
+div#add-ad {
+    width: auto;
+    float: right;
+    margin-left: 36px;
+}
+
+@media (max-width: 600px) {
+  div#add-ad  {
+  	float: none;
+    text-align: center;
+  }
+}
+
+a.dropdown-button:hover {
+text-decoration: none;
+color: rgb(101, 101, 101);
+}
+
+
+.member_green {
+color:#66991C;
+} </style>	
+
+
+<div id="add-ad">
+    	<a href="http://www.tirehost.com/account/ads-classifieds/add" class="btn-add-ad">Post Your Ad!</a>
+</div>
+
+<div id='mydropdown-1' class="dropdown">
+	<a class="dropdown-button" style="width:250px;">
+
+	<span style="display:inline;height:27px;width:27px;overflow:hidden;">
+		<img src="/images/profile-profile-holder.png" class="profile">
+	</span>
+
+	<span style="overflow: hidden; float: left; height: 28px; width: 190px ! important;">Welcome,  </span> 
+
+	<img src="/images/account-dropdown.png" class="dropdown-icon"/></a>
+	
+	<div class="dropdown-panel">
+		<table border=0 width=250 cellspacing=0 cellpadding=0 style="font-size:12px;">
+		<tr>
+			<td class="member_photo_container">
+				<img src="/images/profile-profile-holder.png" class="member_dropdown_photo">
+			</td>
+			<td class="member_details_container" align=left>
+				<span> </span>
+				<br />
+				Account Status: 
+				<img alt="Notice Icon" src="/images/small-notice.png" style="vertical-align:middle;"> <a href="/account/billing" style="color:red;"><font color=red>On Hold</font></a>				<br />
+				Member Level:
+				<span class="member_green">Site Member</span>
+				<div class="clear" style="margin-bottom:10px;"></div>
+								 
+					<div class="clear"></div>
+					<a href="/account/promote/recommendations" >Get More Reviews</a>
+					<div class="clear" style="margin-bottom:10px;"></div>
+								<a class="next blue-bg" href="/free/384259">View Profile</a>
+				<a href="/account/contact" class="next green-bg">Edit Profile</a>
+				<a href="/logout">Logout</a>				
+			</td>
+		</tr>
+		</table>
+	</div>
+</div>
+
+   
+    
+<div id="google_translate_element" style="display: inline-block;"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <form name="frm1" action="/search_results" id="search_bar" class="website-search">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="keywordSuggest" name="q" id="keywordSuggest" value="" placeholder="Enter Keyword">
+                </td>
+                <td>
+                    <input type="text" class="googleSuggest googleLocation" name="location_value" id="location_gmh" value="" placeholder="Enter City or Post Code">
+                </td>
+                <td>
+                    <input type="image" src="/images/icon-search-white.png">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <div class="clear"></div>
+    
+    <style type='text/css'> #mainmenu, #mainmenu li, #mainmenu li a {
+    z-index: 50;
+}
+.mainmenu_toggle {
+ z-index: 9999;
+}
+#mainmenu li a {
+    padding: 0px 17px;
+}
+#mainmenu, a.corner-join, #search_bar > table > tbody > tr > td:nth-child(3) > input[type="image"] {
+	background: rgba(0, 0, 0,1)!important;
+} </style><div id="mainmenu">
+    <div id="wrap">
+        <ul>
+                  <li  >
+			
+                            <a href="/"
+             
+			id = "link1"  target='_blank'>Home			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/aboutus"
+             
+			id = "link183" >About Us			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/about"
+             
+			id = "link2" >How It Works			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/join"
+             
+			id = "link4" >Join Today			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/classifieds"
+             
+			id = "link233" >Classifieds			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="http://www.tirepage.com"
+             
+			id = "link186"  target='_blank'>Blog			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/faq"
+             
+			id = "link156" >FAQ			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/advertise"
+             
+			id = "link157" >Advertise			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/about/contact"
+             
+			id = "link3" >Contact Us			
+                            </a>
+            
+             
+       	    
+                    </li>
+            </ul>                                      
+    </div>
+</div>
+<!-- Responsive Menu  -->
+<div class="responsive_mainmenu">
+  <ul>
+            <li  >
+			
+                            <a href="/"
+             
+			id = "link1"  target='_blank'>Home			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/aboutus"
+             
+			id = "link183" >About Us			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/about"
+             
+			id = "link2" >How It Works			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/join"
+             
+			id = "link4" >Join Today			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/classifieds"
+             
+			id = "link233" >Classifieds			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="http://www.tirepage.com"
+             
+			id = "link186"  target='_blank'>Blog			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/faq"
+             
+			id = "link156" >FAQ			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/advertise"
+             
+			id = "link157" >Advertise			
+                            </a>
+            
+             
+       	    
+                    </li>
+            <li  >
+			
+                            <a href="/about/contact"
+             
+			id = "link3" >Contact Us			
+                            </a>
+            
+             
+       	    
+                    </li>
+      </ul>
+</div>
+<div class="mainmenu_toggle">
+    <i class="fa fa-bars"></i>
+</div></div><div class="clear"></div>
+    <!-- Begin Main Content -->
+    <div class="content-shell">
+
+                <div id="wrap" class="content-wrap">
+            <div class="content">
+
+                                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- End Main Content -->
+    <div class="clear"></div>
+    <div class="ad970">
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TH2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7950311545367754"
+     data-ad-slot="6104750424"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="clear" style="margin-bottom:30px;"></div>
+<div class="footer-shell">
+    <div class="footer-wrap" id="wrap">
+        <div id="footer">
+            <table id="footer-widgets"> 
+                <tr>
+                    <td>
+                        <h4>About</h4>
+                        <p>Finding Tire and Wheel Businesses is easy by searching our trusted network of top-rated Tire and Wheel Businesses.</p>
+                    </td>
+                    <td>
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="/about">How It Works</a>
+                            </li>
+                            <li>
+                                <a href="/join">List Your Business </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>Search</h4>
+                        <ul>
+                            <li>
+                                <a href="/search">Browse Categories</a>
+                            </li>
+                            <li>
+                                <a href="/search/location">Browse Locations</a>
+                            </li>
+                        </ul> 
+                    </td>
+                    <td>
+                        <h4>Support</h4>
+                        <ul>
+                            <li>
+                                <a href="/login/retrieval" title="Retrieve Lost Password" rel="nofollow">Password Retrieval</a>
+                            </li>
+                            <li>
+                                <a href="/about/contact">Contact Us</a>
+                            </li>
+                            
+                                                            <li>
+                                    <a href="">
+                                        877-722-8929                                    </a>
+                                </li>
+                                                    </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:100%;padding-top:5px;" colspan=4>
+                        <!-- Social Links -->           
+                        <div class="footer_social_links">
+    <a href="/about/contact" title="Contact TireHost"><img alt="Tires and Wheels Contact" src="/images/32-email.png" width="32px" height="32px"></a>
+    <a rel="publisher" href="https://plus.google.com/109434987010180343160/posts" target="_blank" title="Google"  rel="publisher"><img src="/images/32-google.png" alt="google" width="32px" height="32px"></a>    <a href="http://www.facebook.com/tirehost" target="_blank" title="TireHost Facebook"><img alt="Facebook Tire and Wheel Businesses" src="/images/32-facebook.png" width="32px" height="32px"></a>    <a href="https://twitter.com/tirehost" target="_blank" title="TireHost Twitter"><img alt="Twitter Tire and Wheel Businesses" src="/images/32-twitter.png" width="32px" height="32px"></a>                <a href="https://www.youtube.com/watch?v=tmuVHxRMclo" target="_blank" title="TireHost YouTube"><img src="/images/32-youtube-2.png" alt="youtube" width="32px" height="32px"></a>    </div>
+                        <!-- End Social Links -->
+                        
+                    </td>
+                </tr>
+            </table>
+            <div class="clear"></div>
+            <div class="footer-final">
+                <div style="float:left;">
+                    <a href="/">TireHost</a> &copy; 2016. All Rights Reserved. 
+                </div>
+                <div style="float:right;">
+                    <a href="/about/contact" rel="nofollow">Contact Us</a> | <a href="/Legal" rel="nofollow">Legal</a> | <a href="/about/terms" rel="nofollow">Terms of Use</a> | <a href="/about/privacy" rel="nofollow">Privacy Policy</a>            
+                </div>
+            <div class="clear"></div>
+                <div style="float:center;">
+                      
+                </div>
+                <div style="float:right;">
+                    <a href="/about/contact">support@tirehost.com   &nbsp&nbsp&nbsp&nbsp     Phone: 877-722-8929  &nbsp&nbsp&nbsp&nbsp   Fax: 877-501-8116           
+                </div>
+            </div>
+        </div>
+    </div>
+</div><style type='text/css'> .footer-shell {
+ padding-bottom:   35px;
+} </style>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/directory/cdn/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/directory/include/js/jquery.min.php"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
+
+<style type='text/css'> span.tt-dropdown-menu {
+  border: 1px solid #FCFCFC;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.tt-is-under-cursor a.suggest-link {
+  background: #55ACEE;
+}
+.tt-is-under-cursor .media-heading,
+.tt-is-under-cursor .suggest-origin,
+.tt-is-under-cursor .location{
+  color:#fff!important;
+}
+.tt-suggestion .media .media-body .suggest-origin {
+  color: rgba(0, 0, 0,0.9);
+  padding: 1px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  line-height: 12px;
+}
+.tt-suggestion {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+body .tt-suggestions .media.br-bottom img {
+  max-width: 45px;
+  height: auto;
+}
+body .tt-suggestions .media-body span {
+  font-size: 10px;
+}
+body .tt-suggestions .media-body h4 {
+  font-size: 12px;
+  margin: 2px 0px;
+  text-transform: capitalize;
+}
+a.suggest-link {
+  padding: 3px 3px;
+  display: block;
+}
+a.suggest-link img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+.left-suggest-col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28%;
+}
+.right-suggest-col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 68%;
+  padding-left: 1%;
+  text-align: left;
+}
+p.media-heading {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+p.suggest-origin {
+  font-size: 10px;
+  color: #333;
+}
+p.location {
+  color: #333;
+  font-size: 10px;
+}
+/* --- all the novalue css --- */
+a.suggest-link .suggest-origin[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link .location[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link img[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link .suggest-origin[data-state="heading"] {
+  display: none;
+}
+a.suggest-link .media-heading[data-heading="heading"] {
+  color: #000!important;
+  font-weight: bold;
+  padding: 4px 0px;
+  text-indent: 9px;
+  font-size: 14px;
+}
+.left-suggest-col[data-photo="novalue"] {
+  display: none;
+}
+.right-suggest-col[data-photo="novalue"] {
+  width: 100%;
+}
+a.suggest-link[href="novalue"] {
+  cursor: default !important;
+  pointer-events: none;
+}
+a.suggest-link[data-heading="heading"] {
+  background-color: rgb(202, 236, 242)!important;
+} </style><script src="/directory/cdn/bootstrap/typeahead/js/bootstrap-typeahead.js"></script>
+<script src="/directory/cdn/bootstrap/typeahead/js/hogan-2.0.0.js"></script>
+<script></script>
+<style type='text/css'> #map-canvas {
+height: 200px;
+margin-bottom: 15px;
+width: 100%;
+}
+.suggestion-search-location {
+  margin: 2px 2px;
+  color: #333;
+  background-color: #CEDDE9;
+  display: inline-block;
+  padding: 5px 11px;
+}
+.other-locations-container {
+  overflow: hidden;
+  max-height: 32px;
+  transition: all 0.5s ease 0s;
+}
+span.show-more-suggestions {
+  padding: 5px;
+  margin: 0px 13px 9px 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #1a0dab;
+  font-weight: 500;
+}
+span.show-more-suggestions:hover {
+  text-decoration: underline;
+}
+.suggestions-heading{
+    margin-bottom: 5px;
+}
+.pac-container {
+  z-index: 1000000;
+} </style>
+
+<!-- This is JS for Slick Carousel -->
+<style type='text/css'> div.content-shell{
+	position: relative;
+}
+.homeslider.slick-slider {
+	width: 100%;
+	position: absolute;
+}
+.slick-prev, .slick-next {
+height: 24px!important;
+width: 24px!important;
+} </style><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.14/slick.css"/>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    //function to get url GET parameters
+    function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            
+            if (sParameterName[0] == sParam) {
+                return decodeURIComponent(sParameterName[1]);
+            }
+        }
+    }    
+    //stating variables for the first initialize of the sidebar map
+    var geocoder;
+    //function that initializes the creation of the google map
+    function initialize() {
+        
+        //This piece of code will create an autosuggest for every input with the class "googleSuggest"
+        var counter = 1;
+        var inputsArray = [];
+        $(".googleSuggest").each(function(){
+            //get the id from the input to be the unique identifier for each autocomplete
+            var inputId = $(this).attr("id");
+            inputsArray[counter] = /** @type {HTMLInputElement} */(
+                document.getElementById(''+inputId));
+            var localizedMainCoutry = '';
+           
+            if (localizedMainCoutry == "") {
+                var inputOptions = {
+                    types: ['(regions)']
+                }
+            
+            } else {
+                var inputOptions = {
+                    types: ['(regions)'],
+                    componentRestrictions: {country: localizedMainCoutry}
+                };
+            }
+            var autocomplete = new google.maps.places.Autocomplete(inputsArray[counter], inputOptions);
+            //the code that prevents the submition when hit enter on a google location autocomplete item
+            google.maps.event.addDomListener(inputsArray[counter], 'keydown', function(e) { 
+                
+                if (e.keyCode == 13) { 
+                    var pacCounter = 0;
+                    //need to run a loop to check each pac container 
+                    $('.pac-container').each(function(){
+                        
+                        if ($(this).css("display") != "none") {
+                            pacCounter++;
+                        };
+                    });
+                    if (pacCounter > 0) {
+                        e.preventDefault();
+                    }
+                }
+            }); 
+            counter++;
+        });
+    }
+    initialize();
+
+    //triggers every time a form with the id website-search is trigered
+    $('.website-search').submit(function(e){
+        
+        var currentForm = $(this);
+        var locationInput = $(this).find(".googleLocation");
+
+        //checks if the location input is filled when submitting the search form
+        if (locationInput.val() != "") {
+            e.preventDefault();
+            
+            //this variable has the main country of the site
+            var countryRegion = "US";
+            var localizedSearchSetting = "0";
+            var form = currentForm;
+            var urlGET = form.serialize();
+            var formActionUrl = form.attr("action");
+            var locationValue = locationInput.val();
+
+            //if the setting localized search is equal to 1 then the region parameter will be sent with the main country of the site
+            if (localizedSearchSetting != 1) {
+                
+                countryRegion = "";
+            }
+            geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address': locationValue , 'region' : countryRegion}, function(results, status) {
+
+                //if the google response of the geocoding was successful it will use that info to build the url for the new search
+                if (status == google.maps.GeocoderStatus.OK) {
+                    
+                    
+                    var parameters = {};
+                    var adComLength = results[0].address_components.length;
+                    var addressComponentsArray = [];
+                    
+                    //loop that will build the array with the address components and will get the short name of country and administrative area level 1
+                    for (var i = 0; i < adComLength; i++) {
+
+                        if (results[0].address_components[i]['types'][0] == "country") {
+                            parameters.country_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "administrative_area_level_1") {
+                            parameters.adm_lvl_1_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "administrative_area_level_2") {
+                            parameters.county_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "locality") {
+                            parameters.city = results[0].address_components[i]['long_name'];
+                        };
+                    };
+                    parameters.location_type = results[0].types[0];
+                    
+                    if (parameters.country_sn == "GB") {
+                        delete parameters.adm_lvl_1_sn;
+                    };
+                    //will check if the response had the bounds parameters
+                    //if it had it will add the south west and north east parameters to the new url
+                    if(results[0].geometry.hasOwnProperty('bounds')) {
+                        var boundsResponse = results[0].geometry.bounds;
+                        parameters.swlat = boundsResponse.getSouthWest().lat();
+                        parameters.nelat = boundsResponse.getNorthEast().lat();
+                        parameters.swlng = boundsResponse.getSouthWest().lng();
+                        parameters.nelng = boundsResponse.getNorthEast().lng();
+
+                    //if there were not bounds parameters in the response it will send the parameter fsearch as radius so a radius search will be performed because of lack of info for this location
+                    } else {
+                        parameters.fsearch = "radius";
+                    }
+                    
+                    var locationCenterResponse = results[0].geometry.location;
+                    parameters.lat = locationCenterResponse.lat();
+                    parameters.lng = locationCenterResponse.lng();
+                    parameters.faddress = results[0].formatted_address;
+                    parameters.place_id = results[0].place_id;
+                    var formatParameters = $.param(parameters);
+                    urlGET = urlGET+"&"+formatParameters;
+                    var urlPath = formActionUrl;
+                    var redirect = urlPath+"?"+urlGET;
+                    //will redirect the page using the new url that has been constructed
+                    window.location.href = redirect;
+
+                } else {
+                    var urlPath = formActionUrl;
+                    var redirect = urlPath+"?"+urlGET;
+                    //will redirect the page using the new url that has been constructed
+                    window.location.href = redirect;
+                }
+            });
+        }
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    //check if a map has been loaded
+    if ($('#map-canvas').length > 0) {
+        var cssHideLogo = "<style>.pac-container:after {  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */background-image: none !important;height: 0px;}</style>";
+        $('body').append(cssHideLogo);
+
+    } else {
+        var cssHideLogo = "<style>.pac-container:after {  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */background-image: block !important;height: 16px;}</style>";
+        $('body').append(cssHideLogo);
+    }
+
+
+    var vlon = '';
+    var vlat = '';
+    var geocodeVisitorsSetting = '1';
+    var geocodingMethod = 'HTML5';
+
+    // check for Geolocation support
+    if ((vlon.length < 8 || vlat.length < 8) && geocodeVisitorsSetting == 1 && geocodingMethod == "HTML5") {
+        console.log("doing the html 5 geocoding");
+        function showError(error) {
+
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    console.log("The Permission has been denied");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+        if (navigator.geolocation) {
+            window.onload = function() {
+                var startPos;
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    startPos = position;
+                    vlat = startPos.coords.latitude;
+                    vlon = startPos.coords.longitude;
+                    $.get( "/api/data/html/get/data_widgets/widget_name/",{ "vlat":vlat, "vlon":vlon , "name": "Website - Save Coordinates Session"})
+                      .done(function(data) {
+                      }); 
+                    populateSearchFields();
+                },showError);
+            };
+
+        } else {
+          alert('Geolocation is not supported for this Browser/OS version yet.');
+        }
+    }
+    if (geocodeVisitorsSetting == 1 && geocodingMethod == "IP") {
+        populateSearchFields();
+    };
+    //check the advanced setting "geocode_visitor_default" if set to 1 will override the "location_value" values to the formatted desire address from the google reverse geocoding response
+    function populateSearchFields(){
+        var prePopulateLocationSetting = '1';
+        var geolocationMethod = 'HTML5';
+     
+        //if set to one will get the lat and lng to do reverse geocoding
+        if (prePopulateLocationSetting == 1 && (geolocationMethod == "HTML5" || geolocationMethod == "IP")) {
+            var visitorLatLng = new google.maps.LatLng(parseFloat(vlat),parseFloat(vlon));
+            var visitorGeocoder = new google.maps.Geocoder();
+            var formattedAddress = [];
+            var preFormattedStructure = {
+                "locality" : "long_name",
+                "administrative_area_level_1" : "long_name",
+                "country" : "long_name"
+            };
+            visitorGeocoder.geocode( {'latLng': visitorLatLng}, function(results, status) {
+
+                //if the google response of the geocoding was successful it will use that info to build the url for the new search
+                if (status == google.maps.GeocoderStatus.OK) {
+
+                    $.each(preFormattedStructure, function( findex, fvalue ) {
+                        
+                        $.each(results[0].address_components, function( rindex, rvalue ) {
+
+                            if (rvalue.types[0] == findex) {
+                                formattedAddress.push(rvalue.long_name);
+                            };
+                        });
+                    });
+                    $('.googleSuggest').each(function(){
+                            if($(this).val()==''){
+                              console.log(formattedAddress.length);
+                              if (formattedAddress.length > 0) {
+                                    $(this).val(formattedAddress.join(', '));
+                                };
+                            }
+                    });
+                } else {
+                    $('.googleSuggest').each(function(){
+                        $(this).val('');
+                    });
+                    console.log("The Google services had the following problem " + status);
+                }
+            });
+        };
+    };
+    populateSearchFields();
+});
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.14/slick.min.js"></script>
+<script>
+
+$('#newestmembers').slick({
+dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 710,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+
+
+
+$('.featurecarousel').slick({
+dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 710,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+$('.bannerSlides').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 6000
+});
+$('.homeslider').slick({
+	fade: true,
+    infinite: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots:false
+});
+</script>
+<script>
+    function decision(message, url){ 
+
+        if (confirm(message)) { 
+            setTimeout(function(){ 
+                window.location = url; 
+            }, 0); 
+        } 
+    }
+    function newsletter(a){
+        $(".newsclass").fancybox({
+            overlayOpacity:"0.7",
+            width:"100",
+            height:"100",
+            autoScale:"false",
+            href:a
+        }).trigger("click");
+    }
+    function doIt(a){
+        $(".myclass").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:920,
+            height:650,
+            autoScale:"false",
+            hideOnOverlayClick:"false",
+            showCloseButton:"true",
+            href:a
+        }).trigger("click");
+    }
+    function rotate(a){
+        $("a[rel=profilephotos"+a+"]").fancybox({
+            index:"5",
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        }).trigger("click",setInterval($.fancybox.next,6200));
+    }
+    function submitNewsletter(a){
+        newsletter("/newsletter/?element="+a+"&email="+document.getElementById(a).value);
+        return false
+    }
+    function submitNewsletterName(a,b){
+        newsletter("/newsletter/?element="+a+"&element2="+b+"&email="+document.getElementById(a).value+"&name="+document.getElementById(b).value);
+        return false
+    }
+    function PopupCenter(a,b,c,d){
+        var e = screen.width/2-c/2;
+        var f = screen.height/2-d/2;
+        var g = window.open(a,b,"toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width="+c+", height="+d+", top="+f+", left="+e)
+    }
+    $(document).ready(function(){
+        $("a[rel=photogroup]").fancybox({
+            overlayOpacity:"0.7",
+            titleShow:true,
+            transitionIn:"elastic",
+            transitionOut:"elastic"
+        });
+        $(".photozoom").fancybox({
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        });
+        $("a[rel=profilephotos]").fancybox({
+            index:"5",
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        });
+        $(".maplink").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            autoScale:"true",
+            width:980,
+            height:600,
+            top:5
+        });
+        $(".retrieve").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500"
+        });
+        $(".terms").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:"800",
+            height:"500",
+            scrolling:"yes",
+            onClosed: function() { 
+                parent.location.reload(true);
+            }
+        });
+        $("#verified").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:500,
+            height:300,
+            titleShow:false,
+            scrolling:"no"
+        });
+        $("#cvv").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:500,
+            height:320,
+            titleShow:false,
+            scrolling:"no"
+        });
+        $(".video").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $(".saveme").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:820,
+            height:500,
+            autoScale:"true"
+        });
+        $(".popup").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:980,
+            height:"80%",
+            autoScale:true
+        });
+        $("#accountchange").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $("#wizard").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $("#signupbox").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            autoScale:"false",
+            width:"820",
+            height:"500"
+        });
+        $("#newsletterbox").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500"
+        })
+    });
+</script>
+
+    <script src="/directory/include/js/jquery.dropdown.js" type="text/javascript"></script>
+    <script>
+        $('#mydropdown-1').dropdown(); 
+    </script>
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            // set onclick event for tab headers
+            $('.main-tabs li a').click(function(){
+                $('div[id$=error]').remove();
+                // set active once
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+                // find tab id
+                var tab_id = $(this).attr('href').replace(/#/,'');
+                // set once active child div
+                $('#location-tabs div#tab-'+tab_id).addClass('active').siblings().removeClass('active');
+                return false;
+            });
+            // init active childs
+            $('#location-tabs li.active a').click();
+        });
+    })(jQuery);
+</script>
+
+<script type='text/javascript' src='/directory/cdn/admin/jquery-autocomplete/jquery.autocomplete.js'></script>
+<script type="text/javascript">
+    $().ready(function() {
+        function findValueCallback(event, data, formatted) {
+            $("<li>").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+        }        
+        function formatItem(row) {
+            return row[0] + " (<strong>id: " + row[1] + "</strong>)";
+        }
+        function formatResult(row) {
+            return row[0].replace(/(<.+?>)/gi, '');
+        }
+        var loadingbar = "Loading results...";
+        $(".query").autocomplete("/servicesearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {            
+        });
+        $(".universalsearch").autocomplete("/universalsearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            var split = ajaxr.split("~")[2];
+            
+            if(split.substring(0,1) == "/") { 
+                window.location = split; 
+            
+            } else { 
+                $(this).parents('form:first').submit(); 
+            }      
+        });
+        $(".queryclick").autocomplete("/json/autocomplete/keywords", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            window.location = ajaxr.split("~")[2];
+        });
+        $(".locationSuggest").autocomplete("/locationsearch", {
+            width: 350,
+            height: 100,
+            scroll: false,
+            selectFirst: false,
+            delay: 100,
+            scrollHeight: 100,
+            loadingClass:'',
+            minChars: 3,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+                
+        });
+        $(".keywordSuggest").autocomplete("/json/autocomplete/keywords", {
+            width: 350,
+            minChars: 2,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+            loadingClass:'',
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                 return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            var split = ajaxr.split("~")[2];
+            
+            if (split.substring(0,1) == "/") { 
+                window.location = split; 
+            }    
+        });
+        $(".categorySuggest").autocomplete("/autocomplete/category", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $(".acKeywords").autocomplete("/json/autocomplete/keywords", {
+            width: 300,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: '100px',
+            delay:0,
+            minChars: 0,
+            max: 7,
+            loadingClass:'',
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $(".acLocations").autocomplete("/json/autocomplete/locations", {
+            width: 300,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+            loadingClass:'',
+            delay:100,
+            minChars: 3,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $("#location_search").autocomplete("/locationsearch", {
+            width: 350,
+            height: 100,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            document.getElementById('location_search').value = ajaxr.split("~")[1];
+            
+            if (document.getElementById('location_search_hidden')) { 
+                document.getElementById('location_search_hidden').value = ajaxr.split("~")[3]; 
+            }    
+        });
+        $("#zipcodevalue").autocomplete("/zipsearch", {
+            width: 350,
+            height: 100,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            document.getElementById('zipcodevalue').value = ajaxr.split("~")[1];
+        });
+        $(".leadquery").autocomplete("/leadsearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            window.location = ajaxr.split("~")[2];
+        });
+    });
+    function searchSite() {  
+        var get = "";
+        get += "&q="+document.getElementById('query').value;
+        
+        if (get != '') { 
+            window.location = '/all?search=all'+get; 
+        }
+        return false;
+    }
+    function searchValue(orgval,fieldname) { 
+    
+        if (document.getElementById(fieldname).value == orgval) { 
+            document.getElementById(fieldname).value = ''; 
+        
+        } else if (document.getElementById(fieldname).value == '') { 
+            document.getElementById(fieldname).value = orgval; 
+        }
+    }
+    searchValue('Enter Name, Keyword or Location','query');       
+</script>    
+<style>
+    .combobox { 
+        width: 70%;
+        font-size: 12px !important; 
+    }
+    .search-dropdown { 
+        text-align: left;
+        font-family: inherit !important; 
+        font-size: 15px !important;  
+    }
+</style>
+
+<link rel="stylesheet" href="/directory/cdn/bootstrap/select2/3.5.2/select2.min.css"/>
+<script src="/directory/cdn/bootstrap/select2/3.5.2/select2.min.js"></script>
+<script>
+    $(document).ready(function() { 
+        function getSecondLevel(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-services',
+                type : "GET",
+                data : {
+                    'specialty_id' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#" + div).select2("open");
+                                            } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }
+        function getSecondLevelAccount(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-services',
+                type : "GET",
+                data : {
+                    'specialty_id' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("close");
+                        $("#"+div).select2("val", "");
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                    
+                                            } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }        
+        function getThirdLevel(div,id,id2) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-locations',
+                type : "GET",
+                data : {
+                    'specialty_id' : id,
+                    'treatment_id' : id2,
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }
+        function getStateList(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-states',
+                type : "GET",
+                data : {
+                    'country' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        $("#"+div).select2("open");
+                    } 
+                }
+            });
+        }
+        function getInfinityChained(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-subcategory',
+                type : "GET",
+                data : {
+                    'parent' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                    }
+                }
+            });
+        }
+        function categoryChained(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/category-list',
+                type : "GET",
+                data : {
+                    'parent' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                    }
+                }
+            });
+        }
+        $("#bd-chained").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#tid").select2("enable",false);
+            getInfinityChained("tid",id);
+            
+                            $("#tid").select2("open");
+                    });
+        $("#category-chained").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#subcategory-chained").select2("enable",false);
+            categoryChained("subcategory-chained",id);
+            
+                            $("#subcategory-chained").select2("open");
+                    });
+        $(".infinite-chained").select2({
+            title: "Select option from list",
+            placeholder: "Click to select an option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            var attr = $(this).attr('next');
+
+            if (typeof attr !== 'undefined' && attr !== false) {
+                $("#"+attr).select2("enable",false);
+                categoryChained(attr,id);
+                
+                                    $("#"+attr).select2("open");
+                            }
+        });
+        $("#subcategory-chained").select2();
+        $(".combobox").select2();
+        $(".search-chained").select2();
+        $("#country-chained").select2({
+            title: "",
+            placeholder: "",
+            val: "",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#state-chained").select2("enable",false);
+            getStateList("state-chained",id);
+            var state = "";
+            
+            if (id == "CA") { 
+                state = "Province"; 
+            
+            } else if (id == "UK") { 
+                state = "Region"; 
+            
+            } else if (id == "US" || id == "AU") { 
+                state = "State"; 
+            
+            } else { 
+                state = "Region"; 
+            }
+            $("#state-chained").prev(".control-label").text(state); 
+        });
+        $("#state-chained").select2();
+
+                $("#country-chained").select2("val", "");
+        $("#state-chained").select2("enable",true);
+        $("#state-chained").select2("val", "");
+        $("#country-chained-2").select2({
+            title: "Select Country",
+            placeholder: "(select country)",
+            val: "",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#state-chained-2").select2("enable",false);
+            getStateList("state-chained-2",id);
+            var state = "";
+            
+            if (id == "CA") { 
+                state = "Province"; 
+            
+            } else if (id == "UK") { 
+                state = "Region"; 
+            
+            } else if (id == "US" || id == "AU") { 
+                state = "State"; 
+            
+            } else { 
+                state = "Region"; 
+            }
+            $("#state-chained-2").prev(".control-label").text(state); 
+        });
+        $("#state-chained-2").select2();
+    
+                $("#profession_id").select2({
+            placeholder: "Select From List",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            getSecondLevelAccount("category_id",id);
+            
+                            $("#category_id").select2("open");
+                    });
+                $("#sid").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id=$(this).val();
+            $("#tid").select2("enable",false);
+            getSecondLevel("tid",id);
+            $("#tid").select2("open");
+        });
+        $("#location_value_dropdown").select2({
+            title: "City, State  Or  Zipcode",
+            placeholder: "City, State  Or  Zipcode",
+            allowClear: true
+        });
+        $("#tid").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+            
+                    });
+        $("#location_value_dropdown").select2({
+            title: "City, State  Or  Zipcode",
+            placeholder: "City, State  Or  Zipcode",
+            allowClear: true
+        });
+    });
+</script>
+
+<script>    
+    $().ready(function() {
+        function findValueCallback(event, data, formatted) {
+            $("<li>").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+        }
+        function formatItem(row) {
+            return row[0] + " (<strong>id: " + row[1] + "</strong>)";
+        }
+        function formatResult(row) {
+            return row[0].replace(/(<.+?>)/gi, '');
+        }
+        $("#keywordvalue").autocomplete("/tagsearch", {
+            width: 320,
+            scroll: true,
+            scrollHeight: 300,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        });
+
+    });
+    function changeOptions(){
+        var max = parseInt(window.prompt('Please type number of items to display:', jQuery.Autocompleter.defaults.max));
+        
+        if (max > 0) {
+            $("#suggest1").setOptions({
+                max: max
+            });
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+    var ajax = new Array();
+    function getCityList(sel) {
+        var countryCode = sel;
+        var result = '';
+        var flag = ''
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA" || countryCode =="CR") { 
+                result = "Province"; 
+                flag = "<img src='flags/CA.png' style='width:16px;height:11px;'>"; 
+            
+            } else if (countryCode == "UK") { 
+                result = "Region"; 
+                flag = "<img src='/flags/UK.png' style='width:16px;height:11px;'>"; 
+            
+            } else if (countryCode == "US") { 
+                result = "Zip Code"; 
+                flag = "<img src='/flags/US.png' style='width:16px;height:11px;'>"; 
+            
+            } else { 
+                result = "&nbsp;"; document.getElementById('state').disabled = false; 
+                flag = "<img src='/flags/All.png' style='width:16px;height:16px;'>"; 
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            document.getElementById('sflag').innerHTML = flag; 
+            
+            if (countryCode == "US") { 
+                document.getElementById('zipcode').style.visibility = 'visible'; 
+                document.getElementById('state').style.visibility = 'hidden';
+                document.getElementById('state').style.display = 'none';
+                document.getElementById('zipcode').style.display = 'block'; 
+            
+            } else { 
+                document.getElementById('zipcode').style.visibility = 'hidden'; 
+                document.getElementById('state').style.visibility = 'visible'; 
+                document.getElementById('state').style.display = 'block'; 
+                document.getElementById('zipcode').value = '';
+                document.getElementById('zipcode').style.display = 'none'; 
+            }
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?statetype=code&category='+countryCode; // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListSearch(sel) {
+        var countryCode = sel;
+        var result = '';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA" || countryCode == "CR") { 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'visible';   
+                document.getElementById('statesearch').style.height = '62px'; 
+                document.getElementById('zipcode').value = '';
+                result = "Province"; 
+                flag = "<img src='/flags/CA.png' style='width:16px;height:11px;'>";
+            
+            } else if (countryCode == "UK") { 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'visible';  
+                document.getElementById('statesearch').style.height = '62px'; 
+                document.getElementById('zipcode').value = '';
+                result = "Region"; 
+                flag = "<img src='/flags/UK.png' style='width:16px;height:11px;'>";
+            
+            } else if (countryCode == "US") { 
+                result = "&nbsp;"; 
+                document.getElementById('statesearch').style.visibility = 'collapse'; 
+                document.getElementById('statesearch').style.height = '0px'; 
+                document.getElementById('zipsearch').style.visibility = 'visible';  
+                document.getElementById('zipsearch').style.height = '112px'; 
+                result = "Zip Code"; 
+                flag = "<img src='/flags/US.png' style='width:16px;height:11px;'>";
+            
+            } else { 
+                result = "&nbsp;"; 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'collapse'; 
+                document.getElementById('statesearch').style.height = '0px'; 
+                document.getElementById('zipcode').value = '';
+                flag = "<img src='/flags/All.png' style='width:16px;height:16px;'>";
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            document.getElementById('sflag').innerHTML = flag; 
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?type=account&statetype=code&category='+countryCode;    // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListAccount(sel) {
+        var countryCode = sel;
+        var result='';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if (countryCode == "CA") { 
+            result = "Province"; 
+        
+        } else if (countryCode == "UK") { 
+            result = "Region"; 
+        
+        } else if (countryCode == "US" || countryCode == "AU") { 
+            result = "State"; 
+        
+        } else { 
+            result = "Region"; 
+        }
+        if (result != "") { 
+            $("#state").prev('.control-label').text(result);  
+        }
+        if(countryCode.length > 0){
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?type=account&statetype=code&category='+countryCode;    // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListPayment(sel) {
+        var countryCode = sel;
+        var result = '';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA") { 
+                result = "Province"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else if (countryCode == "UK") { 
+                result = "Region"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else if (countryCode == "US" || countryCode == "AU") { 
+                result = "State"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else { 
+                result = "Region"; 
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?nota=1&statetype=code&category='+countryCode;  // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function createCities(index) {
+        var obj = document.getElementById('state');
+        eval(ajax[index].response); // Executing the response from Ajax as Javascript code  
+    }
+</script>
+
+<style type='text/css'> @media only screen and (max-width: 1010px) {
+
+#mainmenu {display: none;}
+.mainmenu_toggle {display: block!important;}
+.dropdown {right: 53px;}
+
+
+}
+
+
+@media only screen and (max-width: 720px) {
+
+.dropdown {
+right: 0;
+}
+
+div#wrap.header-wrap {
+margin-bottom: 2.5%;
+}
+
+
+}
+
+.responsive_mainmenu > ul li {
+    height: 32px;
+    list-style: outside none none;
+    position: relative;
+}
+
+.responsive_mainmenu ul li a {
+color: white;
+font-size: 14px;
+line-height: 32px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;
+}
+.responsive_mainmenu li {
+border-top: 1px solid rgba(255,255,255,0.1);
+}
+.responsive_mainmenu {
+list-style: none;
+text-align: center;
+display: none;
+}
+
+.mainmenu_toggle {
+height: 30px;
+width: 30px;
+position: absolute;
+top: 13px;
+right: 16px;
+text-align: center;
+border-radius: 4px;
+display: none;
+cursor: pointer;
+}
+.mainmenu_toggle i:hover {
+color: #DEDEDE;
+}
+.mainmenu_toggle i {
+color: white;
+line-height: 30px;
+font-size: 16px;
+}
+
+
+.responsive_mainmenu ul li > ul {
+background: #F7F7F7!important;
+display: none;
+left: 0;
+position: relative;
+width: 100%;
+z-index: 9999!important;
+}
+.responsive_mainmenu > ul > li > ul > li > ul > li a {
+color: black;
+}
+.responsive_mainmenu ul li  ul > li a {
+color: rgb(45, 91, 137);
+}
+.responsive_mainmenu > ul > li > ul > li > ul > li {
+background: rgb(202, 202, 202);
+}
+.sub_menu_open {
+height: 100%!important;
+}
+.menu_sub_icon {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 25px;
+}
+.responsive_mainmenu ul li ul li .menu_sub_icon i {
+color: grey;
+} </style><script type="text/javascript">
+    $(document).ready(function () {
+    
+    //js for new responsive menu
+    $(".responsive_mainmenu ul li").each(function(){
+				if($(this).has("ul").length){
+          $(this).prepend('<div class="menu_sub_icon"><i class="fa fa-bars"></i></div>');
+        }
+    });  
+   $('.mainmenu_toggle').click(function() {
+        $('.responsive_mainmenu').slideToggle();
+   });
+
+   $('.menu_sub_icon').click(function(){
+   	console.log("Top");
+    $(this).parent().children('ul').slideToggle();
+    
+   });
+
+       
+//js for making lead message responsive
+        if (screen.width <= 640) {
+            $("#inbox  tr").before("<tr><th>Message #</th> <th>Name</th><th>Location</th> <th>Date Matched</th> <th>Status</th> <th>Action</th> </tr>");
+
+        } //close 640
+
+
+        $('.fancy-video').fancybox({
+            'type': 'iframe'
+        });
+    });// fin document.ready
+</script>
+
+
+
+<style type='text/css'> 
+
+body.sidebar_open {
+left: 190px;
+}
+
+body {
+position: relative;
+left: 0px;
+-webkit-transition: all 600ms ease-in-out;
+-moz-transition: all 600ms ease-in-out;
+-o-transition: all 600ms ease-in-out;
+-ms-transition: all 600ms ease-in-out; 
+transition: all 600ms ease-in-out;
+overflow-x: visible;
+}
+
+.responsive_sidebar {
+position: absolute;
+top: 0;
+left: -190px;
+-webkit-transition: all 700ms ease-in-out;
+-moz-transition: all 700ms ease-in-out;
+-o-transition: all 700ms ease-in-out;
+-ms-transition: all 700ms ease-in-out; 
+transition: all 700ms ease-in-out;
+}
+.responsive_sidebar .account_menu {
+border-radius: 0;
+background: white;
+}
+.sidebar_toggle {
+height: 30px;
+width: 30px;
+position: absolute;
+top: 13px;
+left: 16px;
+text-align: center;
+border-radius: 4px;
+display: none;
+cursor: pointer;
+}
+.sidebar_toggle i { 
+color: #fff;
+line-height: 30px;
+font-size: 16px;
+}
+
+@media only screen and (max-width: 1010px) {
+.sidebar_toggle {display:block!important;}
+}
+ </style></body>
+</html>
+
+/*
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Widget: </title>
+        
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<meta name="description" content="" >
+<meta name="keywords" content="" >
+
+
+<!-- FOLLOW or NOFOLLOW SETTING -->
+          
+<meta name="robots" content="index, follow" >
+<!-- FACEBOOK META DATA -->
+<meta property="og:type" content="website" >
+<meta property="og:url" content="http://www.tirehost.com/devpreview" >
+<meta property="og:site_name" content="TireHost" >
+<meta property="og:title" content="Widget: " >
+<meta property="og:description" content="" >
+<meta property="og:image" content="http://www.tirehost.com/images/JWtirehostlogoedit.png">
+        <link rel="canonical" href="https://www.tirehost.com/devpreview">
+        <link rel="stylesheet" href = "/include/css/styles.css" type = "text/css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+        
+        <!---Google Font Api-->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600' rel='stylesheet' type="text/css">
+        
+                    <link rel="shortcut icon" href="/images/favicon.png">
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-57959662-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><script>
+        window.sdkAsyncInit = function() {
+            // Instantiate the SDK
+            var res = new EDMUNDSAPI('u2z7d6cawyn6ft9qfcjc9449');
+            // Optional parameters
+            var options = {};
+            // Callback function to be called when the API response is returned
+            function success(res) {
+            
+                if (res.error) {
+                    body.innerHTML = "ERROR: " + res.error.message;
+                }
+                
+            
+                var selectList = "";
+                
+                
+                for (i = 0; i < res.makes.length; i++) {
+                    selectList += "<option value='" +  res.makes[i].name + "'>" + res.makes[i].name + "</option>";
+                }
+                
+                $('#selectTes').append(selectList);
+                $('#selectTes').focus();
+                
+                
+                var makeEdit = $("#myform-element-9").text();
+
+                
+                if(makeEdit != ""){
+
+                    $("select option[value='"+makeEdit+"']").attr("selected","selected");
+                    $("#selectTes").change();
+                
+                }
+
+            }
+
+            // Oops, Houston we have a problem!
+            function fail(data) {
+                console.log(data);
+            }
+            // Fire the API call
+            
+            res.api('/api/vehicle/v2/makes', options, success, fail);
+            
+      };
+      // Load the SDK asynchronously
+      (function(d, s, id){
+            var js, sdkjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "/include/edmunds.api.sdk.js";
+            sdkjs.parentNode.insertBefore(js, sdkjs);
+       }(document, 'script', 'edmunds-jssdk'));
+
+    </script>
+    
+    <meta name="Language" content="English">
+<meta name="Publisher" content="Tire Host">
+<meta name="Revisit-After" content="7 Days">
+<meta name="distribution" content="LOCAL">
+<meta name="Robots" content="INDEX, FOLLOW">
+<meta name="page-topic" content="Tire Host">
+<meta name="YahooSeeker" content="INDEX, FOLLOW">
+<meta name="msnbot" content="INDEX, FOLLOW">
+<meta name="googlebot" content="index, follow">
+<meta name="Rating" content="General"> 
+<meta name="allow-search" content="yes">
+<meta name="expires" content="never">
+<meta name="googlebot" content="noodp">
+<meta name="slurp" content="noydir">    </head><body>
+<style type="text/css">
+            #mainmenu li a {
+    padding: 0 25px;
+    font-size:15px;
+}
+.header-shell {
+  background: white;
+}
+#location_gmh {
+  background: url(/images/pindrop.png) no-repeat scroll 7px center #FFF;
+}   
+    
+    </style><!--  Theme Color Rules -->
+<style>
+.post_content.homepage_stream a h3 { 
+    border-color: rgba(0, 0, 0,1)!important;
+}
+.slick-prev:before, 
+.slick-next:before {
+    color: rgba(0, 0, 0,1)!important;
+    font-size: 25px !important;
+}
+#login_page div .main-tabs li.active a {
+    background: rgba(0, 0, 0,1);
+    border-color: rgba(0, 0, 0,1);   
+}
+#login_page div .main-tabs li.active a:hover {
+    background: rgba(0, 0, 0,1)!important;
+    border-color: rgba(rgb(0, 0, 0)1) !important;
+    color: white !important;
+}
+.logo-table a,
+.logo-table a:hover { 
+    color: rgba(0, 0, 0,1);
+}
+#mainmenu,.pricing_menu li .title, 
+a.corner-join,
+div#sidebar .account_menu h2, 
+table.large-step tr td:first-child span {
+    background: rgba(0, 0, 0,1);
+}
+.header-wrap #search_bar input[type="image"] {
+    background: rgba(0, 0, 0,1);
+}
+.hero-frame .search_box {
+    background: rgba(0, 0, 0,0.8);
+}
+.main-tabs li a {
+    background: rgba(0, 0, 0,.1);
+}
+.module {
+    border-color: rgba(0, 0, 0,1);
+}
+.hero-frame .search_box {
+    float: center !important;
+}
+#login_page .login h1 {
+    background: rgba(0, 0, 0,1)!important;
+}
+#mainmenu ul li ul li a:hover,
+#mainmenu ul li ul li a:last-child:hover {
+    border-left-color: rgba(0, 0, 0,1)!important;
+}    
+.hero-frame h1, .hero-frame h2 {
+    float: center!important;
+    text-align: center;  
+}
+.hero-frame h1, .top-head-left h1, .hero-frame h2 {
+    color: rgb(255, 255, 255);
+            font-family: 'Raleway';
+     
+}
+
+    .hero-frame .search_box {
+        float: none!important;
+        margin: 0 auto;
+                    width:510px;
+            
+    }
+    .hero-frame h1,
+    .hero-frame h2 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: none;
+        text-align: center;
+    }
+    .postcode_search [type="text"] {
+        text-align: center !important;
+    }    
+
+@media only screen and (max-width: 720px) {
+    a.corner-join {
+        background: rgba(0, 0, 0,1);
+    }
+}
+</style>
+
+<!-- Responsive Menu Rules -->
+
+<style>
+.sidebar_toggle {
+    background: rgba(0, 0, 0,1)!important; 
+}
+.responsive_mainmenu {
+    display: none;
+}
+.mainmenu_toggle {
+    display: none;
+}
+.responsive_mainmenu, .mainmenu_toggle  {
+    background: rgba(0, 0, 0,1)!important;
+}
+</style><div class="header-shell">
+    <div id="wrap" class="header-wrap">
+        <style type='text/css'> .logo-table {
+  border: 0 none;
+  float: left;
+  margin: 20px 0px 0 -191;
+  position: relative;
+  width: 100px;
+} </style><table class="logo-table">
+    <tr>
+
+                    <td>
+                <a href="http://www.tirehost.com/" title="TireHost">
+                    <img  src="/images/JWtirehostlogoedit.png" alt="TireHost">
+                </a>
+            </td>
+
+            </tr>
+</table><style type='text/css'> @media only screen and (max-width: 480px){
+  .header-wrap #search_bar td {
+    text-align: center;
+  }
+  .header-wrap #search_bar input[type="text"] {
+      width: calc(95% - 40px);
+  }
+} </style><style type='text/css'> a.btn-add-ad {    
+    display: inline-block;
+    margin-top: 10px;
+    width: 161px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #D42525;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: none;
+    border-color: #dbbd42;
+    border-radius: 5px;
+ 
+}
+
+div#add-ad {
+    width: auto;
+    float: right;
+    margin-left: 36px;
+}
+
+@media (max-width: 600px) {
+  div#add-ad  {
+    float: none;
+    text-align: center;
+  }
+}
+
+a.dropdown-button:hover {
+text-decoration: none;
+color: rgb(101, 101, 101);
+}
+
+
+.member_green {
+color:#66991C;
+} </style>  
+
+
+<div id="add-ad">
+        <a href="http://www.tirehost.com/account/ads-classifieds/add" class="btn-add-ad">Post Your Ad!</a>
+</div>
+
+<div id='mydropdown-1' class="dropdown">
+    <a class="dropdown-button" style="width:250px;">
+
+    <span style="display:inline;height:27px;width:27px;overflow:hidden;">
+        <img src="/images/profile-profile-holder.png" class="profile">
+    </span>
+
+    <span style="overflow: hidden; float: left; height: 28px; width: 190px ! important;">Welcome,  </span> 
+
+    <img src="/images/account-dropdown.png" class="dropdown-icon"/></a>
+    
+    <div class="dropdown-panel">
+        <table border=0 width=250 cellspacing=0 cellpadding=0 style="font-size:12px;">
+        <tr>
+            <td class="member_photo_container">
+                <img src="/images/profile-profile-holder.png" class="member_dropdown_photo">
+            </td>
+            <td class="member_details_container" align=left>
+                <span> </span>
+                <br />
+                Account Status: 
+                <img alt="Notice Icon" src="/images/small-notice.png" style="vertical-align:middle;"> <a href="/account/billing" style="color:red;"><font color=red>On Hold</font></a>              <br />
+                Member Level:
+                <span class="member_green">Site Member</span>
+                <div class="clear" style="margin-bottom:10px;"></div>
+                                 
+                    <div class="clear"></div>
+                    <a href="/account/promote/recommendations" >Get More Reviews</a>
+                    <div class="clear" style="margin-bottom:10px;"></div>
+                                <a class="next blue-bg" href="/free/384259">View Profile</a>
+                <a href="/account/contact" class="next green-bg">Edit Profile</a>
+                <a href="/logout">Logout</a>                
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+
+   
+    
+<div id="google_translate_element" style="display: inline-block;"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <form name="frm1" action="/search_results" id="search_bar" class="website-search">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="keywordSuggest" name="q" id="keywordSuggest" value="" placeholder="Enter Keyword">
+                </td>
+                <td>
+                    <input type="text" class="googleSuggest googleLocation" name="location_value" id="location_gmh" value="" placeholder="Enter City or Post Code">
+                </td>
+                <td>
+                    <input type="image" src="/images/icon-search-white.png">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <div class="clear"></div>
+    
+    <style type='text/css'> #mainmenu, #mainmenu li, #mainmenu li a {
+    z-index: 50;
+}
+.mainmenu_toggle {
+ z-index: 9999;
+}
+#mainmenu li a {
+    padding: 0px 17px;
+}
+#mainmenu, a.corner-join, #search_bar > table > tbody > tr > td:nth-child(3) > input[type="image"] {
+    background: rgba(0, 0, 0,1)!important;
+} </style><div id="mainmenu">
+    <div id="wrap">
+        <ul>
+                  <li  >
+            
+                            <a href="/"
+             
+            id = "link1"  target='_blank'>Home          
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/aboutus"
+             
+            id = "link183" >About Us            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/about"
+             
+            id = "link2" >How It Works          
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/join"
+             
+            id = "link4" >Join Today            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/classifieds"
+             
+            id = "link233" >Classifieds         
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="http://www.tirepage.com"
+             
+            id = "link186"  target='_blank'>Blog            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/faq"
+             
+            id = "link156" >FAQ         
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/advertise"
+             
+            id = "link157" >Advertise           
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/about/contact"
+             
+            id = "link3" >Contact Us            
+                            </a>
+            
+             
+            
+                    </li>
+            </ul>                                      
+    </div>
+</div>
+<!-- Responsive Menu  -->
+<div class="responsive_mainmenu">
+  <ul>
+            <li  >
+            
+                            <a href="/"
+             
+            id = "link1"  target='_blank'>Home          
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/aboutus"
+             
+            id = "link183" >About Us            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/about"
+             
+            id = "link2" >How It Works          
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/join"
+             
+            id = "link4" >Join Today            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/classifieds"
+             
+            id = "link233" >Classifieds         
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="http://www.tirepage.com"
+             
+            id = "link186"  target='_blank'>Blog            
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/faq"
+             
+            id = "link156" >FAQ         
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/advertise"
+             
+            id = "link157" >Advertise           
+                            </a>
+            
+             
+            
+                    </li>
+            <li  >
+            
+                            <a href="/about/contact"
+             
+            id = "link3" >Contact Us            
+                            </a>
+            
+             
+            
+                    </li>
+      </ul>
+</div>
+<div class="mainmenu_toggle">
+    <i class="fa fa-bars"></i>
+</div></div><div class="clear"></div>
+    <!-- Begin Main Content -->
+    <div class="content-shell">
+
+                <div id="wrap" class="content-wrap">
+            <div class="content">
+
+                                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- End Main Content -->
+    <div class="clear"></div>
+    <div class="ad970">
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TH2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7950311545367754"
+     data-ad-slot="6104750424"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="clear" style="margin-bottom:30px;"></div>
+<div class="footer-shell">
+    <div class="footer-wrap" id="wrap">
+        <div id="footer">
+            <table id="footer-widgets"> 
+                <tr>
+                    <td>
+                        <h4>About</h4>
+                        <p>Finding Tire and Wheel Businesses is easy by searching our trusted network of top-rated Tire and Wheel Businesses.</p>
+                    </td>
+                    <td>
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="/about">How It Works</a>
+                            </li>
+                            <li>
+                                <a href="/join">List Your Business </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>Search</h4>
+                        <ul>
+                            <li>
+                                <a href="/search">Browse Categories</a>
+                            </li>
+                            <li>
+                                <a href="/search/location">Browse Locations</a>
+                            </li>
+                        </ul> 
+                    </td>
+                    <td>
+                        <h4>Support</h4>
+                        <ul>
+                            <li>
+                                <a href="/login/retrieval" title="Retrieve Lost Password" rel="nofollow">Password Retrieval</a>
+                            </li>
+                            <li>
+                                <a href="/about/contact">Contact Us</a>
+                            </li>
+                            
+                                                            <li>
+                                    <a href="">
+                                        877-722-8929                                    </a>
+                                </li>
+                                                    </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:100%;padding-top:5px;" colspan=4>
+                        <!-- Social Links -->           
+                        <div class="footer_social_links">
+    <a href="/about/contact" title="Contact TireHost"><img alt="Tires and Wheels Contact" src="/images/32-email.png" width="32px" height="32px"></a>
+    <a rel="publisher" href="https://plus.google.com/109434987010180343160/posts" target="_blank" title="Google"  rel="publisher"><img src="/images/32-google.png" alt="google" width="32px" height="32px"></a>    <a href="http://www.facebook.com/tirehost" target="_blank" title="TireHost Facebook"><img alt="Facebook Tire and Wheel Businesses" src="/images/32-facebook.png" width="32px" height="32px"></a>    <a href="https://twitter.com/tirehost" target="_blank" title="TireHost Twitter"><img alt="Twitter Tire and Wheel Businesses" src="/images/32-twitter.png" width="32px" height="32px"></a>                <a href="https://www.youtube.com/watch?v=tmuVHxRMclo" target="_blank" title="TireHost YouTube"><img src="/images/32-youtube-2.png" alt="youtube" width="32px" height="32px"></a>    </div>
+                        <!-- End Social Links -->
+                        
+                    </td>
+                </tr>
+            </table>
+            <div class="clear"></div>
+            <div class="footer-final">
+                <div style="float:left;">
+                    <a href="/">TireHost</a> &copy; 2016. All Rights Reserved. 
+                </div>
+                <div style="float:right;">
+                    <a href="/about/contact" rel="nofollow">Contact Us</a> | <a href="/Legal" rel="nofollow">Legal</a> | <a href="/about/terms" rel="nofollow">Terms of Use</a> | <a href="/about/privacy" rel="nofollow">Privacy Policy</a>            
+                </div>
+            <div class="clear"></div>
+                <div style="float:center;">
+                      
+                </div>
+                <div style="float:right;">
+                    <a href="/about/contact">support@tirehost.com   &nbsp&nbsp&nbsp&nbsp     Phone: 877-722-8929  &nbsp&nbsp&nbsp&nbsp   Fax: 877-501-8116           
+                </div>
+            </div>
+        </div>
+    </div>
+</div><style type='text/css'> .footer-shell {
+ padding-bottom:   35px;
+} </style>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/directory/cdn/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/directory/include/js/jquery.min.php"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
+
+<style type='text/css'> span.tt-dropdown-menu {
+  border: 1px solid #FCFCFC;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.tt-is-under-cursor a.suggest-link {
+  background: #55ACEE;
+}
+.tt-is-under-cursor .media-heading,
+.tt-is-under-cursor .suggest-origin,
+.tt-is-under-cursor .location{
+  color:#fff!important;
+}
+.tt-suggestion .media .media-body .suggest-origin {
+  color: rgba(0, 0, 0,0.9);
+  padding: 1px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  line-height: 12px;
+}
+.tt-suggestion {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+body .tt-suggestions .media.br-bottom img {
+  max-width: 45px;
+  height: auto;
+}
+body .tt-suggestions .media-body span {
+  font-size: 10px;
+}
+body .tt-suggestions .media-body h4 {
+  font-size: 12px;
+  margin: 2px 0px;
+  text-transform: capitalize;
+}
+a.suggest-link {
+  padding: 3px 3px;
+  display: block;
+}
+a.suggest-link img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+.left-suggest-col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28%;
+}
+.right-suggest-col {
+  display: inline-block;
+  vertical-align: middle;
+  width: 68%;
+  padding-left: 1%;
+  text-align: left;
+}
+p.media-heading {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+p.suggest-origin {
+  font-size: 10px;
+  color: #333;
+}
+p.location {
+  color: #333;
+  font-size: 10px;
+}
+/* --- all the novalue css --- */
+a.suggest-link .suggest-origin[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link .location[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link img[data-state="novalue"] {
+  display: none;
+}
+a.suggest-link .suggest-origin[data-state="heading"] {
+  display: none;
+}
+a.suggest-link .media-heading[data-heading="heading"] {
+  color: #000!important;
+  font-weight: bold;
+  padding: 4px 0px;
+  text-indent: 9px;
+  font-size: 14px;
+}
+.left-suggest-col[data-photo="novalue"] {
+  display: none;
+}
+.right-suggest-col[data-photo="novalue"] {
+  width: 100%;
+}
+a.suggest-link[href="novalue"] {
+  cursor: default !important;
+  pointer-events: none;
+}
+a.suggest-link[data-heading="heading"] {
+  background-color: rgb(202, 236, 242)!important;
+} </style><script src="/directory/cdn/bootstrap/typeahead/js/bootstrap-typeahead.js"></script>
+<script src="/directory/cdn/bootstrap/typeahead/js/hogan-2.0.0.js"></script>
+<script></script>
+<style type='text/css'> #map-canvas {
+height: 200px;
+margin-bottom: 15px;
+width: 100%;
+}
+.suggestion-search-location {
+  margin: 2px 2px;
+  color: #333;
+  background-color: #CEDDE9;
+  display: inline-block;
+  padding: 5px 11px;
+}
+.other-locations-container {
+  overflow: hidden;
+  max-height: 32px;
+  transition: all 0.5s ease 0s;
+}
+span.show-more-suggestions {
+  padding: 5px;
+  margin: 0px 13px 9px 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #1a0dab;
+  font-weight: 500;
+}
+span.show-more-suggestions:hover {
+  text-decoration: underline;
+}
+.suggestions-heading{
+    margin-bottom: 5px;
+}
+.pac-container {
+  z-index: 1000000;
+} </style>
+
+<!-- This is JS for Slick Carousel -->
+<style type='text/css'> div.content-shell{
+    position: relative;
+}
+.homeslider.slick-slider {
+    width: 100%;
+    position: absolute;
+}
+.slick-prev, .slick-next {
+height: 24px!important;
+width: 24px!important;
+} </style><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.14/slick.css"/>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    //function to get url GET parameters
+    function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            
+            if (sParameterName[0] == sParam) {
+                return decodeURIComponent(sParameterName[1]);
+            }
+        }
+    }    
+    //stating variables for the first initialize of the sidebar map
+    var geocoder;
+    //function that initializes the creation of the google map
+    function initialize() {
+        
+        //This piece of code will create an autosuggest for every input with the class "googleSuggest"
+        var counter = 1;
+        var inputsArray = [];
+        $(".googleSuggest").each(function(){
+            //get the id from the input to be the unique identifier for each autocomplete
+            var inputId = $(this).attr("id");
+            inputsArray[counter] = /** @type {HTMLInputElement} */(
+                document.getElementById(''+inputId));
+            var localizedMainCoutry = '';
+           
+            if (localizedMainCoutry == "") {
+                var inputOptions = {
+                    types: ['(regions)']
+                }
+            
+            } else {
+                var inputOptions = {
+                    types: ['(regions)'],
+                    componentRestrictions: {country: localizedMainCoutry}
+                };
+            }
+            var autocomplete = new google.maps.places.Autocomplete(inputsArray[counter], inputOptions);
+            //the code that prevents the submition when hit enter on a google location autocomplete item
+            google.maps.event.addDomListener(inputsArray[counter], 'keydown', function(e) { 
+                
+                if (e.keyCode == 13) { 
+                    var pacCounter = 0;
+                    //need to run a loop to check each pac container 
+                    $('.pac-container').each(function(){
+                        
+                        if ($(this).css("display") != "none") {
+                            pacCounter++;
+                        };
+                    });
+                    if (pacCounter > 0) {
+                        e.preventDefault();
+                    }
+                }
+            }); 
+            counter++;
+        });
+    }
+    initialize();
+
+    //triggers every time a form with the id website-search is trigered
+    $('.website-search').submit(function(e){
+        
+        var currentForm = $(this);
+        var locationInput = $(this).find(".googleLocation");
+
+        //checks if the location input is filled when submitting the search form
+        if (locationInput.val() != "") {
+            e.preventDefault();
+            
+            //this variable has the main country of the site
+            var countryRegion = "US";
+            var localizedSearchSetting = "0";
+            var form = currentForm;
+            var urlGET = form.serialize();
+            var formActionUrl = form.attr("action");
+            var locationValue = locationInput.val();
+
+            //if the setting localized search is equal to 1 then the region parameter will be sent with the main country of the site
+            if (localizedSearchSetting != 1) {
+                
+                countryRegion = "";
+            }
+            geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address': locationValue , 'region' : countryRegion}, function(results, status) {
+
+                //if the google response of the geocoding was successful it will use that info to build the url for the new search
+                if (status == google.maps.GeocoderStatus.OK) {
+                    
+                    
+                    var parameters = {};
+                    var adComLength = results[0].address_components.length;
+                    var addressComponentsArray = [];
+                    
+                    //loop that will build the array with the address components and will get the short name of country and administrative area level 1
+                    for (var i = 0; i < adComLength; i++) {
+
+                        if (results[0].address_components[i]['types'][0] == "country") {
+                            parameters.country_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "administrative_area_level_1") {
+                            parameters.adm_lvl_1_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "administrative_area_level_2") {
+                            parameters.county_sn = results[0].address_components[i]['short_name'];
+                        };
+                        if (results[0].address_components[i]['types'][0] == "locality") {
+                            parameters.city = results[0].address_components[i]['long_name'];
+                        };
+                    };
+                    parameters.location_type = results[0].types[0];
+                    
+                    if (parameters.country_sn == "GB") {
+                        delete parameters.adm_lvl_1_sn;
+                    };
+                    //will check if the response had the bounds parameters
+                    //if it had it will add the south west and north east parameters to the new url
+                    if(results[0].geometry.hasOwnProperty('bounds')) {
+                        var boundsResponse = results[0].geometry.bounds;
+                        parameters.swlat = boundsResponse.getSouthWest().lat();
+                        parameters.nelat = boundsResponse.getNorthEast().lat();
+                        parameters.swlng = boundsResponse.getSouthWest().lng();
+                        parameters.nelng = boundsResponse.getNorthEast().lng();
+
+                    //if there were not bounds parameters in the response it will send the parameter fsearch as radius so a radius search will be performed because of lack of info for this location
+                    } else {
+                        parameters.fsearch = "radius";
+                    }
+                    
+                    var locationCenterResponse = results[0].geometry.location;
+                    parameters.lat = locationCenterResponse.lat();
+                    parameters.lng = locationCenterResponse.lng();
+                    parameters.faddress = results[0].formatted_address;
+                    parameters.place_id = results[0].place_id;
+                    var formatParameters = $.param(parameters);
+                    urlGET = urlGET+"&"+formatParameters;
+                    var urlPath = formActionUrl;
+                    var redirect = urlPath+"?"+urlGET;
+                    //will redirect the page using the new url that has been constructed
+                    window.location.href = redirect;
+
+                } else {
+                    var urlPath = formActionUrl;
+                    var redirect = urlPath+"?"+urlGET;
+                    //will redirect the page using the new url that has been constructed
+                    window.location.href = redirect;
+                }
+            });
+        }
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    //check if a map has been loaded
+    if ($('#map-canvas').length > 0) {
+        var cssHideLogo = "<style>.pac-container:after {  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */background-image: none !important;height: 0px;}</style>";
+        $('body').append(cssHideLogo);
+
+    } else {
+        var cssHideLogo = "<style>.pac-container:after {  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */background-image: block !important;height: 16px;}</style>";
+        $('body').append(cssHideLogo);
+    }
+
+
+    var vlon = '';
+    var vlat = '';
+    var geocodeVisitorsSetting = '1';
+    var geocodingMethod = 'HTML5';
+
+    // check for Geolocation support
+    if ((vlon.length < 8 || vlat.length < 8) && geocodeVisitorsSetting == 1 && geocodingMethod == "HTML5") {
+        console.log("doing the html 5 geocoding");
+        function showError(error) {
+
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    console.log("The Permission has been denied");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+        if (navigator.geolocation) {
+            window.onload = function() {
+                var startPos;
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    startPos = position;
+                    vlat = startPos.coords.latitude;
+                    vlon = startPos.coords.longitude;
+                    $.get( "/api/data/html/get/data_widgets/widget_name/",{ "vlat":vlat, "vlon":vlon , "name": "Website - Save Coordinates Session"})
+                      .done(function(data) {
+                      }); 
+                    populateSearchFields();
+                },showError);
+            };
+
+        } else {
+          alert('Geolocation is not supported for this Browser/OS version yet.');
+        }
+    }
+    if (geocodeVisitorsSetting == 1 && geocodingMethod == "IP") {
+        populateSearchFields();
+    };
+    //check the advanced setting "geocode_visitor_default" if set to 1 will override the "location_value" values to the formatted desire address from the google reverse geocoding response
+    function populateSearchFields(){
+        var prePopulateLocationSetting = '1';
+        var geolocationMethod = 'HTML5';
+     
+        //if set to one will get the lat and lng to do reverse geocoding
+        if (prePopulateLocationSetting == 1 && (geolocationMethod == "HTML5" || geolocationMethod == "IP")) {
+            var visitorLatLng = new google.maps.LatLng(parseFloat(vlat),parseFloat(vlon));
+            var visitorGeocoder = new google.maps.Geocoder();
+            var formattedAddress = [];
+            var preFormattedStructure = {
+                "locality" : "long_name",
+                "administrative_area_level_1" : "long_name",
+                "country" : "long_name"
+            };
+            visitorGeocoder.geocode( {'latLng': visitorLatLng}, function(results, status) {
+
+                //if the google response of the geocoding was successful it will use that info to build the url for the new search
+                if (status == google.maps.GeocoderStatus.OK) {
+
+                    $.each(preFormattedStructure, function( findex, fvalue ) {
+                        
+                        $.each(results[0].address_components, function( rindex, rvalue ) {
+
+                            if (rvalue.types[0] == findex) {
+                                formattedAddress.push(rvalue.long_name);
+                            };
+                        });
+                    });
+                    $('.googleSuggest').each(function(){
+                            if($(this).val()==''){
+                              console.log(formattedAddress.length);
+                              if (formattedAddress.length > 0) {
+                                    $(this).val(formattedAddress.join(', '));
+                                };
+                            }
+                    });
+                } else {
+                    $('.googleSuggest').each(function(){
+                        $(this).val('');
+                    });
+                    console.log("The Google services had the following problem " + status);
+                }
+            });
+        };
+    };
+    populateSearchFields();
+});
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.14/slick.min.js"></script>
+<script>
+
+$('#newestmembers').slick({
+dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 710,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+
+
+
+$('.featurecarousel').slick({
+dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 710,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+$('.bannerSlides').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 6000
+});
+$('.homeslider').slick({
+    fade: true,
+    infinite: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots:false
+});
+</script>
+<script>
+    function decision(message, url){ 
+
+        if (confirm(message)) { 
+            setTimeout(function(){ 
+                window.location = url; 
+            }, 0); 
+        } 
+    }
+    function newsletter(a){
+        $(".newsclass").fancybox({
+            overlayOpacity:"0.7",
+            width:"100",
+            height:"100",
+            autoScale:"false",
+            href:a
+        }).trigger("click");
+    }
+    function doIt(a){
+        $(".myclass").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:920,
+            height:650,
+            autoScale:"false",
+            hideOnOverlayClick:"false",
+            showCloseButton:"true",
+            href:a
+        }).trigger("click");
+    }
+    function rotate(a){
+        $("a[rel=profilephotos"+a+"]").fancybox({
+            index:"5",
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        }).trigger("click",setInterval($.fancybox.next,6200));
+    }
+    function submitNewsletter(a){
+        newsletter("/newsletter/?element="+a+"&email="+document.getElementById(a).value);
+        return false
+    }
+    function submitNewsletterName(a,b){
+        newsletter("/newsletter/?element="+a+"&element2="+b+"&email="+document.getElementById(a).value+"&name="+document.getElementById(b).value);
+        return false
+    }
+    function PopupCenter(a,b,c,d){
+        var e = screen.width/2-c/2;
+        var f = screen.height/2-d/2;
+        var g = window.open(a,b,"toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width="+c+", height="+d+", top="+f+", left="+e)
+    }
+    $(document).ready(function(){
+        $("a[rel=photogroup]").fancybox({
+            overlayOpacity:"0.7",
+            titleShow:true,
+            transitionIn:"elastic",
+            transitionOut:"elastic"
+        });
+        $(".photozoom").fancybox({
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        });
+        $("a[rel=profilephotos]").fancybox({
+            index:"5",
+            overlayOpacity:"0.7",
+            titleShow:"true",
+            cyclic:"true",
+            overlayShow:"true",
+            hideOnContentClick:"true",
+            transitionIn:"elastic",
+            transitionOut:"elastic",
+            titlePosition:"inside",
+            changeFade:"fast"
+        });
+        $(".maplink").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            autoScale:"true",
+            width:980,
+            height:600,
+            top:5
+        });
+        $(".retrieve").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500"
+        });
+        $(".terms").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:"800",
+            height:"500",
+            scrolling:"yes",
+            onClosed: function() { 
+                parent.location.reload(true);
+            }
+        });
+        $("#verified").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:500,
+            height:300,
+            titleShow:false,
+            scrolling:"no"
+        });
+        $("#cvv").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:500,
+            height:320,
+            titleShow:false,
+            scrolling:"no"
+        });
+        $(".video").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $(".saveme").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:820,
+            height:500,
+            autoScale:"true"
+        });
+        $(".popup").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:980,
+            height:"80%",
+            autoScale:true
+        });
+        $("#accountchange").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $("#wizard").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            width:"820",
+            height:"500",
+            autoScale:"true"
+        });
+        $("#signupbox").fancybox({
+            overlayOpacity:"0.7",
+            type:"iframe",
+            autoScale:"false",
+            width:"820",
+            height:"500"
+        });
+        $("#newsletterbox").fancybox({
+            overlayOpacity:"0.7",
+            width:"820",
+            height:"500"
+        })
+    });
+</script>
+
+    <script src="/directory/include/js/jquery.dropdown.js" type="text/javascript"></script>
+    <script>
+        $('#mydropdown-1').dropdown(); 
+    </script>
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            // set onclick event for tab headers
+            $('.main-tabs li a').click(function(){
+                $('div[id$=error]').remove();
+                // set active once
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+                // find tab id
+                var tab_id = $(this).attr('href').replace(/#/,'');
+                // set once active child div
+                $('#location-tabs div#tab-'+tab_id).addClass('active').siblings().removeClass('active');
+                return false;
+            });
+            // init active childs
+            $('#location-tabs li.active a').click();
+        });
+    })(jQuery);
+</script>
+
+<script type='text/javascript' src='/directory/cdn/admin/jquery-autocomplete/jquery.autocomplete.js'></script>
+<script type="text/javascript">
+    $().ready(function() {
+        function findValueCallback(event, data, formatted) {
+            $("<li>").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+        }        
+        function formatItem(row) {
+            return row[0] + " (<strong>id: " + row[1] + "</strong>)";
+        }
+        function formatResult(row) {
+            return row[0].replace(/(<.+?>)/gi, '');
+        }
+        var loadingbar = "Loading results...";
+        $(".query").autocomplete("/servicesearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {            
+        });
+        $(".universalsearch").autocomplete("/universalsearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            var split = ajaxr.split("~")[2];
+            
+            if(split.substring(0,1) == "/") { 
+                window.location = split; 
+            
+            } else { 
+                $(this).parents('form:first').submit(); 
+            }      
+        });
+        $(".queryclick").autocomplete("/json/autocomplete/keywords", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            window.location = ajaxr.split("~")[2];
+        });
+        $(".locationSuggest").autocomplete("/locationsearch", {
+            width: 350,
+            height: 100,
+            scroll: false,
+            selectFirst: false,
+            delay: 100,
+            scrollHeight: 100,
+            loadingClass:'',
+            minChars: 3,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+                
+        });
+        $(".keywordSuggest").autocomplete("/json/autocomplete/keywords", {
+            width: 350,
+            minChars: 2,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+            loadingClass:'',
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                 return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            var split = ajaxr.split("~")[2];
+            
+            if (split.substring(0,1) == "/") { 
+                window.location = split; 
+            }    
+        });
+        $(".categorySuggest").autocomplete("/autocomplete/category", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $(".acKeywords").autocomplete("/json/autocomplete/keywords", {
+            width: 300,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: '100px',
+            delay:0,
+            minChars: 0,
+            max: 7,
+            loadingClass:'',
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $(".acLocations").autocomplete("/json/autocomplete/locations", {
+            width: 300,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+            loadingClass:'',
+            delay:100,
+            minChars: 3,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {                
+        });
+        $("#location_search").autocomplete("/locationsearch", {
+            width: 350,
+            height: 100,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            document.getElementById('location_search').value = ajaxr.split("~")[1];
+            
+            if (document.getElementById('location_search_hidden')) { 
+                document.getElementById('location_search_hidden').value = ajaxr.split("~")[3]; 
+            }    
+        });
+        $("#zipcodevalue").autocomplete("/zipsearch", {
+            width: 350,
+            height: 100,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 100,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            document.getElementById('zipcodevalue').value = ajaxr.split("~")[1];
+        });
+        $(".leadquery").autocomplete("/leadsearch", {
+            width: 350,
+            scroll: true,
+            selectFirst: false,
+            scrollHeight: 300,
+
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        }).result(function(data, value, ajaxr) {
+            window.location = ajaxr.split("~")[2];
+        });
+    });
+    function searchSite() {  
+        var get = "";
+        get += "&q="+document.getElementById('query').value;
+        
+        if (get != '') { 
+            window.location = '/all?search=all'+get; 
+        }
+        return false;
+    }
+    function searchValue(orgval,fieldname) { 
+    
+        if (document.getElementById(fieldname).value == orgval) { 
+            document.getElementById(fieldname).value = ''; 
+        
+        } else if (document.getElementById(fieldname).value == '') { 
+            document.getElementById(fieldname).value = orgval; 
+        }
+    }
+    searchValue('Enter Name, Keyword or Location','query');       
+</script>    
+<style>
+    .combobox { 
+        width: 70%;
+        font-size: 12px !important; 
+    }
+    .search-dropdown { 
+        text-align: left;
+        font-family: inherit !important; 
+        font-size: 15px !important;  
+    }
+</style>
+
+<link rel="stylesheet" href="/directory/cdn/bootstrap/select2/3.5.2/select2.min.css"/>
+<script src="/directory/cdn/bootstrap/select2/3.5.2/select2.min.js"></script>
+<script>
+    $(document).ready(function() { 
+        function getSecondLevel(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-services',
+                type : "GET",
+                data : {
+                    'specialty_id' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#" + div).select2("open");
+                                            } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }
+        function getSecondLevelAccount(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-services',
+                type : "GET",
+                data : {
+                    'specialty_id' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("close");
+                        $("#"+div).select2("val", "");
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                    
+                                            } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }        
+        function getThirdLevel(div,id,id2) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-locations',
+                type : "GET",
+                data : {
+                    'specialty_id' : id,
+                    'treatment_id' : id2,
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                        $("#"+div).select2("val", "");
+                    }
+                }
+            });
+        }
+        function getStateList(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-states',
+                type : "GET",
+                data : {
+                    'country' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        $("#"+div).select2("open");
+                    } 
+                }
+            });
+        }
+        function getInfinityChained(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/get-subcategory',
+                type : "GET",
+                data : {
+                    'parent' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                    }
+                }
+            });
+        }
+        function categoryChained(div,id) {
+            $("#"+div).select2("data", {id: "", text: "Loading..."});
+            $.ajax({
+                url : '/ajaxsearch/category-list',
+                type : "GET",
+                data : {
+                    'parent' : id
+                },
+                dataType: "json",
+                success : function(data) {
+                    var options = '';
+                    
+                    for (var i = 0; i < data.length; i++) {
+                        options += '<option value="' + data[i].value + '">' + data[i].title + '</option>';
+                    }
+                    if (data.length > 1) { 
+                        $("#"+div).select2("enable",true);
+                        $("#"+div).html(options);
+                        $("#"+div).select2("val", "");
+                        
+                                                    $("#"+div).select2("open");
+                                            
+                    } else {
+                        $("#"+div).select2("data", {id: "", text: "No Options Available"});
+                    }
+                }
+            });
+        }
+        $("#bd-chained").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#tid").select2("enable",false);
+            getInfinityChained("tid",id);
+            
+                            $("#tid").select2("open");
+                    });
+        $("#category-chained").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#subcategory-chained").select2("enable",false);
+            categoryChained("subcategory-chained",id);
+            
+                            $("#subcategory-chained").select2("open");
+                    });
+        $(".infinite-chained").select2({
+            title: "Select option from list",
+            placeholder: "Click to select an option",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            var attr = $(this).attr('next');
+
+            if (typeof attr !== 'undefined' && attr !== false) {
+                $("#"+attr).select2("enable",false);
+                categoryChained(attr,id);
+                
+                                    $("#"+attr).select2("open");
+                            }
+        });
+        $("#subcategory-chained").select2();
+        $(".combobox").select2();
+        $(".search-chained").select2();
+        $("#country-chained").select2({
+            title: "",
+            placeholder: "",
+            val: "",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#state-chained").select2("enable",false);
+            getStateList("state-chained",id);
+            var state = "";
+            
+            if (id == "CA") { 
+                state = "Province"; 
+            
+            } else if (id == "UK") { 
+                state = "Region"; 
+            
+            } else if (id == "US" || id == "AU") { 
+                state = "State"; 
+            
+            } else { 
+                state = "Region"; 
+            }
+            $("#state-chained").prev(".control-label").text(state); 
+        });
+        $("#state-chained").select2();
+
+                $("#country-chained").select2("val", "");
+        $("#state-chained").select2("enable",true);
+        $("#state-chained").select2("val", "");
+        $("#country-chained-2").select2({
+            title: "Select Country",
+            placeholder: "(select country)",
+            val: "",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            $("#state-chained-2").select2("enable",false);
+            getStateList("state-chained-2",id);
+            var state = "";
+            
+            if (id == "CA") { 
+                state = "Province"; 
+            
+            } else if (id == "UK") { 
+                state = "Region"; 
+            
+            } else if (id == "US" || id == "AU") { 
+                state = "State"; 
+            
+            } else { 
+                state = "Region"; 
+            }
+            $("#state-chained-2").prev(".control-label").text(state); 
+        });
+        $("#state-chained-2").select2();
+    
+                $("#profession_id").select2({
+            placeholder: "Select From List",
+            allowClear: true
+        }).change(function () { 
+            var id = $(this).val();
+            getSecondLevelAccount("category_id",id);
+            
+                            $("#category_id").select2("open");
+                    });
+                $("#sid").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+        }).change(function () { 
+            var id=$(this).val();
+            $("#tid").select2("enable",false);
+            getSecondLevel("tid",id);
+            $("#tid").select2("open");
+        });
+        $("#location_value_dropdown").select2({
+            title: "City, State  Or  Zipcode",
+            placeholder: "City, State  Or  Zipcode",
+            allowClear: true
+        });
+        $("#tid").select2({
+            title: "Select An Option",
+            placeholder: "Select An Option",
+            allowClear: true
+            
+                    });
+        $("#location_value_dropdown").select2({
+            title: "City, State  Or  Zipcode",
+            placeholder: "City, State  Or  Zipcode",
+            allowClear: true
+        });
+    });
+</script>
+
+<script>    
+    $().ready(function() {
+        function findValueCallback(event, data, formatted) {
+            $("<li>").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+        }
+        function formatItem(row) {
+            return row[0] + " (<strong>id: " + row[1] + "</strong>)";
+        }
+        function formatResult(row) {
+            return row[0].replace(/(<.+?>)/gi, '');
+        }
+        $("#keywordvalue").autocomplete("/tagsearch", {
+            width: 320,
+            scroll: true,
+            scrollHeight: 300,
+            formatItem: function(data, i, n, value) {
+                return value.split("~")[0];
+            },
+            formatResult: function(data, value) {
+                return value.split("~")[1];
+            }
+        });
+
+    });
+    function changeOptions(){
+        var max = parseInt(window.prompt('Please type number of items to display:', jQuery.Autocompleter.defaults.max));
+        
+        if (max > 0) {
+            $("#suggest1").setOptions({
+                max: max
+            });
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+    var ajax = new Array();
+    function getCityList(sel) {
+        var countryCode = sel;
+        var result = '';
+        var flag = ''
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA" || countryCode =="CR") { 
+                result = "Province"; 
+                flag = "<img src='flags/CA.png' style='width:16px;height:11px;'>"; 
+            
+            } else if (countryCode == "UK") { 
+                result = "Region"; 
+                flag = "<img src='/flags/UK.png' style='width:16px;height:11px;'>"; 
+            
+            } else if (countryCode == "US") { 
+                result = "Zip Code"; 
+                flag = "<img src='/flags/US.png' style='width:16px;height:11px;'>"; 
+            
+            } else { 
+                result = "&nbsp;"; document.getElementById('state').disabled = false; 
+                flag = "<img src='/flags/All.png' style='width:16px;height:16px;'>"; 
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            document.getElementById('sflag').innerHTML = flag; 
+            
+            if (countryCode == "US") { 
+                document.getElementById('zipcode').style.visibility = 'visible'; 
+                document.getElementById('state').style.visibility = 'hidden';
+                document.getElementById('state').style.display = 'none';
+                document.getElementById('zipcode').style.display = 'block'; 
+            
+            } else { 
+                document.getElementById('zipcode').style.visibility = 'hidden'; 
+                document.getElementById('state').style.visibility = 'visible'; 
+                document.getElementById('state').style.display = 'block'; 
+                document.getElementById('zipcode').value = '';
+                document.getElementById('zipcode').style.display = 'none'; 
+            }
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?statetype=code&category='+countryCode; // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListSearch(sel) {
+        var countryCode = sel;
+        var result = '';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA" || countryCode == "CR") { 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'visible';   
+                document.getElementById('statesearch').style.height = '62px'; 
+                document.getElementById('zipcode').value = '';
+                result = "Province"; 
+                flag = "<img src='/flags/CA.png' style='width:16px;height:11px;'>";
+            
+            } else if (countryCode == "UK") { 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'visible';  
+                document.getElementById('statesearch').style.height = '62px'; 
+                document.getElementById('zipcode').value = '';
+                result = "Region"; 
+                flag = "<img src='/flags/UK.png' style='width:16px;height:11px;'>";
+            
+            } else if (countryCode == "US") { 
+                result = "&nbsp;"; 
+                document.getElementById('statesearch').style.visibility = 'collapse'; 
+                document.getElementById('statesearch').style.height = '0px'; 
+                document.getElementById('zipsearch').style.visibility = 'visible';  
+                document.getElementById('zipsearch').style.height = '112px'; 
+                result = "Zip Code"; 
+                flag = "<img src='/flags/US.png' style='width:16px;height:11px;'>";
+            
+            } else { 
+                result = "&nbsp;"; 
+                document.getElementById('zipsearch').style.visibility = 'collapse'; 
+                document.getElementById('zipsearch').style.height = '0px'; 
+                document.getElementById('statesearch').style.visibility = 'collapse'; 
+                document.getElementById('statesearch').style.height = '0px'; 
+                document.getElementById('zipcode').value = '';
+                flag = "<img src='/flags/All.png' style='width:16px;height:16px;'>";
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            document.getElementById('sflag').innerHTML = flag; 
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?type=account&statetype=code&category='+countryCode;    // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListAccount(sel) {
+        var countryCode = sel;
+        var result='';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if (countryCode == "CA") { 
+            result = "Province"; 
+        
+        } else if (countryCode == "UK") { 
+            result = "Region"; 
+        
+        } else if (countryCode == "US" || countryCode == "AU") { 
+            result = "State"; 
+        
+        } else { 
+            result = "Region"; 
+        }
+        if (result != "") { 
+            $("#state").prev('.control-label').text(result);  
+        }
+        if(countryCode.length > 0){
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?type=account&statetype=code&category='+countryCode;    // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function getCityListPayment(sel) {
+        var countryCode = sel;
+        var result = '';
+        document.getElementById('state').options.length = 0;    // Empty city select box
+        
+        if(countryCode.length > 0){
+            
+            if (countryCode == "CA") { 
+                result = "Province"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else if (countryCode == "UK") { 
+                result = "Region"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else if (countryCode == "US" || countryCode == "AU") { 
+                result = "State"; 
+                document.getElementById('state').disabled = false; 
+            
+            } else { 
+                result = "Region"; 
+            }
+            document.getElementById('byregion').innerHTML = result; 
+            var index = ajax.length;
+            ajax[index] = new sack();   
+            ajax[index].requestFile = '/getStateList.php?nota=1&statetype=code&category='+countryCode;  // Specifying which file to get
+            ajax[index].onCompletion = function(){ createCities(index) };   // Specify function that will be executed after file has been found
+            ajax[index].runAJAX();      // Execute AJAX function
+        }
+    }
+    function createCities(index) {
+        var obj = document.getElementById('state');
+        eval(ajax[index].response); // Executing the response from Ajax as Javascript code  
+    }
+</script>
+
+<style type='text/css'> @media only screen and (max-width: 1010px) {
+
+#mainmenu {display: none;}
+.mainmenu_toggle {display: block!important;}
+.dropdown {right: 53px;}
+
+
+}
+
+
+@media only screen and (max-width: 720px) {
+
+.dropdown {
+right: 0;
+}
+
+div#wrap.header-wrap {
+margin-bottom: 2.5%;
+}
+
+
+}
+
+.responsive_mainmenu > ul li {
+    height: 32px;
+    list-style: outside none none;
+    position: relative;
+}
+
+.responsive_mainmenu ul li a {
+color: white;
+font-size: 14px;
+line-height: 32px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;
+}
+.responsive_mainmenu li {
+border-top: 1px solid rgba(255,255,255,0.1);
+}
+.responsive_mainmenu {
+list-style: none;
+text-align: center;
+display: none;
+}
+
+.mainmenu_toggle {
+height: 30px;
+width: 30px;
+position: absolute;
+top: 13px;
+right: 16px;
+text-align: center;
+border-radius: 4px;
+display: none;
+cursor: pointer;
+}
+.mainmenu_toggle i:hover {
+color: #DEDEDE;
+}
+.mainmenu_toggle i {
+color: white;
+line-height: 30px;
+font-size: 16px;
+}
+
+
+.responsive_mainmenu ul li > ul {
+background: #F7F7F7!important;
+display: none;
+left: 0;
+position: relative;
+width: 100%;
+z-index: 9999!important;
+}
+.responsive_mainmenu > ul > li > ul > li > ul > li a {
+color: black;
+}
+.responsive_mainmenu ul li  ul > li a {
+color: rgb(45, 91, 137);
+}
+.responsive_mainmenu > ul > li > ul > li > ul > li {
+background: rgb(202, 202, 202);
+}
+.sub_menu_open {
+height: 100%!important;
+}
+.menu_sub_icon {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 25px;
+}
+.responsive_mainmenu ul li ul li .menu_sub_icon i {
+color: grey;
+} </style><script type="text/javascript">
+    $(document).ready(function () {
+    
+    //js for new responsive menu
+    $(".responsive_mainmenu ul li").each(function(){
+                if($(this).has("ul").length){
+          $(this).prepend('<div class="menu_sub_icon"><i class="fa fa-bars"></i></div>');
+        }
+    });  
+   $('.mainmenu_toggle').click(function() {
+        $('.responsive_mainmenu').slideToggle();
+   });
+
+   $('.menu_sub_icon').click(function(){
+    console.log("Top");
+    $(this).parent().children('ul').slideToggle();
+    
+   });
+
+       
+//js for making lead message responsive
+        if (screen.width <= 640) {
+            $("#inbox  tr").before("<tr><th>Message #</th> <th>Name</th><th>Location</th> <th>Date Matched</th> <th>Status</th> <th>Action</th> </tr>");
+
+        } //close 640
+
+
+        $('.fancy-video').fancybox({
+            'type': 'iframe'
+        });
+    });// fin document.ready
+</script>
+
+
+
+<style type='text/css'> body.sidebar_open {
+left: 190px;
+}
+
+body {
+position: relative;
+left: 0px;
+-webkit-transition: all 600ms ease-in-out;
+-moz-transition: all 600ms ease-in-out;
+-o-transition: all 600ms ease-in-out;
+-ms-transition: all 600ms ease-in-out; 
+transition: all 600ms ease-in-out;
+overflow-x: visible;
+}
+
+.responsive_sidebar {
+position: absolute;
+top: 0;
+left: -190px;
+-webkit-transition: all 700ms ease-in-out;
+-moz-transition: all 700ms ease-in-out;
+-o-transition: all 700ms ease-in-out;
+-ms-transition: all 700ms ease-in-out; 
+transition: all 700ms ease-in-out;
+}
+.responsive_sidebar .account_menu {
+border-radius: 0;
+background: white;
+}
+.sidebar_toggle {
+height: 30px;
+width: 30px;
+position: absolute;
+top: 13px;
+left: 16px;
+text-align: center;
+border-radius: 4px;
+display: none;
+cursor: pointer;
+}
+.sidebar_toggle i { 
+color: #fff;
+line-height: 30px;
+font-size: 16px;
+}
+
+@media only screen and (max-width: 1010px) {
+.sidebar_toggle {display:block!important;}
+}
+ </style></body>
+</html>
+ */
+
+<hr />English Version Below<br /><hr />
+<p><span style="font-size: 22px; padding: 15px 0px; font-weight: normal; font-family: arial; color: #0d83dd;">Bienvenidos a la Familia de %%%website_name%%% !<br /></span><br /><span style="font-size: 12pt;">Ahora puede añadir información de su empresa en nuestro directorio en línea. Para mejorar su exposición, tomese el tiempo para proporcionar el mayor detalle acerca de su empresa como sea posible.</span><br /> <br /> <span style="font-size: 18px; padding: 15px 0px; font-weight: normal; font-family: arial; color: #0d83dd;">Por Favor Recuerde los detalles de Inicio de Sesión</span></p>
+<table border="0" cellpadding="6" cellspacing="6" style="font-weight: bold; background: #e3e3e3;">
+<tbody>
+<tr>
+<td style="background: #ffffff;"><span style="font-size: 14px;">Username:</span></td>
+<td style="background: #ffffff;"><span style="font-size: 14px;">%email%</span></td>
+</tr>
+<tr>
+<td style="background: #ffffff;"><span style="font-size: 14px;">Password:</span></td>
+<td style="background: #ffffff;"><span style="font-size: 14px;">%password%</span></td>
+</tr>
+</tbody>
+</table>
+<p><br /><span style="font-size: 15px;"><strong>Iniciar sesión ahora:</strong> <a href="http://%website_url%/login" style="font-size: 14px;">http://%website_url%/login</a></span></p>
+<p><br /><span style="font-size: 14px;"><span style="font-size: 10pt;">Si necesita cualquier tipo de asistencia durante el uso de nuestro sitio, por favor, responda a este correo electrónico.</span><br /><br /><span style="font-size: 14pt;">Ayudandote a Incrementar su Negocio RAPIDO!</span><br /><br /><span style="font-size: 14pt;">Varian Alfaro</span><br /><span style="font-size: 14pt;">8440-3114        </span><br /><span style="font-size: 14pt;"><a href="http://guiatelefonicacostarica.com/">Guia Telefonica de Negocios Costa Rica<br /></a></span><br /><br /></span></p>
+<hr />English Version Below<br /><hr />
+<p><span style="font-size: 22px; padding: 15px 0px; font-weight: normal; font-family: arial; color: #0d83dd;"><br />Welcome to the %%%website_name%%% family!</span><br /> <br /> <span style="font-size: 14px;">You may now add your company's information to our online directory. To improve your exposure, take the time to provide as much detail about your company as possible.</span><br /> <br /> <span style="font-size: 18px; padding: 15px 0px; font-weight: normal; font-family: arial; color: #0d83dd;">Please Remember Your Log In Details</span></p>
+<table border="0" cellpadding="6" cellspacing="6" style="font-weight: bold; background: #e3e3e3;">
+<tbody>
+<tr>
+<td style="background: #ffffff;"><span style="font-size: 14px;">Username:</span></td>
+<td style="background: #ffffff;"><span style="font-size: 14px;">%email%</span></td>
+</tr>
+<tr>
+<td style="background: #ffffff;"><span style="font-size: 14px;">Password:</span></td>
+<td style="background: #ffffff;"><span style="font-size: 14px;">%password%</span></td>
+</tr>
+</tbody>
+</table>
+<p><br /> <span style="font-size: 15px;"><b>Login Now:</b> <a href="http://%website_url%/login" style="font-size: 14px;">http://%website_url%/login</a></span></p>
+<p><br /> <span style="font-size: 14px;">If you need any assistance while using our site, please reply to this email.</span></p>
+
+
