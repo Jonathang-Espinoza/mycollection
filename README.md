@@ -1,3 +1,4 @@
+Es una prueba para GitHub
 
 Jonathan@Jonathan MINGW64 /c/xampp/htdocs/myCollection (master)
 $ git pull collection master
